@@ -5,383 +5,153 @@
     font-family: gilroy;
 }
 html,body{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 .nav{
-    height: 10%;
+    height: 50px;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 40px;
-    
+    padding: 0px 30px;
+    color: #fff;
 }
-.nav-part1{
+.nav1{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
 }
-.nav-part1 h1{
+.nav1 h5{
+    font-size: 17px;
+    font-weight: 500;
+}
+.nav2 h5{
     font-size: 20px;
     font-weight: 500;
-    color: #fff;
 }
-.nav-part1 i{
+.nav3 button{
+    padding: 10px 20px;
+    border-radius: 50px;
     color: #fff;
+    background-color: transparent;
+     border: 1px solid #fff;
 }
-.nav-part2 h1{
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-}
-.nav-part3 i{
-    color: #fff;
-}
-.center{
-    height: 89%;
+.main{
+    height: 92%;
     width: 100%;
-    background-color: fuchsia;
+    background-color:black;
     position: relative;
 }
-.center img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.page1{
-    position: absolute;
-    top: 45%;
-    left: 8%;
-    color: #fff;
-}
-.page1 h5{
-    font-size: 15px;
-    font-weight: 500;
-}
-.page1 h1{
-    font-size: 43px;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-.page1 p{
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 10px;
-}
-.page1 h3{
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-left: 120px;
-    color: royalblue;
-}
-h2{
-    position: absolute;
-    left: 50%;
-    top: 92%;
-    font-size: 20px;
-    font-weight: 600;
-    mix-blend-mode: #fff;
-}
-.center i{
-    position: absolute;
-    left: 54%;
-    top: 97%;
-    color: #fff;
-}
-.page2{
-    height: 100%;
-    width: 100%;
+h1{
+    font-size: 27px;
     padding-top: 30px;
-    padding-left: 150px;
-    display: flex;
-    position: relative;
+    padding-left: 120px;
+    font-weight: 500;
+    color: #fff;
+}
+p{
+    position: absolute;
+    top: 30px;
+    left: 700px;
+    font-size: 15px;  
+    color: #fff;
+}
+.main button{
+    position: absolute;
+    top: 90px;
+    left: 700px;
+    font-size: 12px; 
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
 }
 .box{
-    height: 40%;
-    width: 60%;
-    background-color: rgba(0, 0, 0, 0.295);
-    position:relative;
-}
-.box img{
-    height: 100%;
+    height: 75%;
     width: 100%;
-  object-fit: cover;
-  padding-left: 80px;
-}
-.box h1{
     position: absolute;
-    top: 40%;
-    left: 6%;
-    font-size: 43px;
-    font-weight: 500;
-}
-.box h5{
-    position: absolute;
-    top: 85%;
-    left: 6%;
-    font-size: 15px;
-    font-weight: 500;
+    top: 25%;
+    display: flex;
+    align-items: end;
 }
 .box1{
+    height: 440px;
     width: 25%;
-    height: 96%;
-    background-color: rgba(0, 0, 0, 0.295);
-    margin-left: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgba(214, 107, 72, 0.719);
+    overflow: hidden;
     position: relative;
+}
+ .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding-top: 10px;
+}
+.overlay h4{
+color: #fff;
+font-size: 17px;
+font-weight: 500;
+}
+.overlay h5{
+color: #fff;
+font-size: 13px;
+font-weight: 500;
 }
 .box1 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center;
-    padding-left: 70px;
-}
-.box1 h1{
-    position: absolute;
-    top: 70%;
-    left: 6%;
-    font-size: 43px;
-    font-weight: 500;
-}
-.box1 h5{
-    position: absolute;
-    top: 92%;
-    left: 6%;
-    font-size: 15px;
-    font-weight: 500;
 }
 .box2{
-    height: 50%;
+    height: 250px;
     width: 25%;
-    background-color: rgba(0, 0, 0, 0.295);
-    position: absolute;
-    top: 46%;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    background-color: rgba(65, 105, 225, 0.603);
+    overflow: hidden;
+    position: relative;
 }
+
 .box2 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    padding-left: 40%;
-    margin-top: 18%;
-}
-.box2 h1{
-    position: absolute;
-    top: 55%;
-    left: 6%;
-    font-size: 43px;
-    font-weight: 500;
-}
-.box2 h5{
-    position: absolute;
-    top: 88%;
-    left: 6%;
-    font-size: 15px;
-    font-weight: 500;
 }
 .box3{
-    height: 50%;
-    width: 26%;
-    background-color: rgba(0, 0, 0, 0.295);
-    position: absolute;
-    left: 38%;
-    top: 46%;
+    height: 440px;
+    width: 25%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgb(0, 240, 168);
+    overflow: hidden;
+    position: relative;
 }
 .box3 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    padding-top: 70px;
-    padding-left: 70px;
-    margin-left: 40px;
 }
-.box3 h1{
-    position: absolute;
-    top: 55%;
-    left: 6%;
-    font-size: 43px;
-    font-weight: 500;
-}
-.box3 h5{
-    position: absolute;
-    top: 88%;
-    left: 6%;
-    font-size: 15px;
-    font-weight: 500;
-}
-.page3{
-    height: 100%;
-    width: 100%;
-   
-}
-.page3 .nav{
-    height: 10%;
-    width: 100%;
-    background-color: transparent;
-}
-.nav h1{
-    font-size: 20px;
-}
-.nav h5{
-    font-size: 15px;
-    font-weight: 500;
-}
-.container{
+.box4{
     height: 250px;
-    width: 250px;
-    margin: 42px;
-    display: inline-block;
+    width: 25%;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    background-color: rgba(214, 107, 72, 0.664);
+    overflow: hidden;
     position: relative;
 }
-.container img{
+.box4 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center;
-}
-.bottom{
-    height: 100px;
-    width: 250px;
-}
-.bottom h3{
-    padding-top: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.bottom h6{
-    font-size: 10px;
-    font-weight: 500;
-}
-.bottom h4{
-    font-size: 17px;
-    font-weight: 500;
-    color: royalblue;
 }
 
-.page4{
-    height: 250px;
-    width: 100%;
-    margin-top: 200px;
-    background-color: rgba(0, 0, 0, 0.295);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 90px;
-}
-.page4-left h1{
-    font-size: 50px;
-    letter-spacing: 2px;
-}
-.page4-left p{
-    font-size: 17px;
-    font-weight: 500;
-   
-}
-.page4-right input{
-    width: 300px;
-    background-color: transparent;
-    border-top: #141414;
-    border-left: #141414;
-    border-right: #141414;
-    font-size: 15px;
-}
-::placeholder{
-    padding-left: 10px;
-}
-.page4-right button{
-    padding: 10px 20px;
-    padding-bottom: 2px;
-    background-color: black;
-    color: #fff;
-}
-.footer{
-    height: 40%;
-    width: 100%;
-    background: radial-gradient(#343434,black);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 30px;
-}
-.ftr1{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 20px;
-}
-.ftr1 h1{
-    font-size: 50px;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-.ftr1 h3{
-    font-size: 15px;
-    font-weight: 500;
-}
-.ftr2{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 20px;
-}
-.ftr2 h3{
-    font-size: 20px;
-    
-}
-.ftr2 h5{
-    font-size: 15px;
-    font-weight: 500;
-}
-.ftr3{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 20px;
-}
-.ftr3 h3{
-    font-size: 20px;
-}
-.ftr3 h5{
-    font-size: 15px;
-    font-weight: 500;
-}
-.ftr4{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 20px;
-}
-.ftr4 h3{
-    font-size: 20px;
-}
-.ftr4 h5{
-    font-size: 15px;
-    font-weight: 500;
-}
-.ftr5{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 20px;
-}
-.ftr5 h3{
-    font-size: 20px;
-}
-.ftr5 h5{
-    font-size: 15px;
-    font-weight: 500;
-}
-.ftr6{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 20px;
-}
-.ftr6 h3{
-    font-size: 20px;
-    font-weight: 500;
-}
+
+
