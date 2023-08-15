@@ -11,98 +11,118 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
-   position: relative;
-   display: flex;
 }
-.main-prt1{
-    height: 100%;
-    width: 75%;
-}
-.nav{
-    height: 100px;
+.header{
+    height: 20%;
     width: 100%;
+}
+.nav1{
+    height: 40%;
+    width: 100%;
+    background-color: #DFFFF9;
+    position: relative;
     display: flex;
     align-items: center;
+    gap: 200px;
+    padding: 0 50px;
+}
+.nav1-p1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.nav1-p1 h5{
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 600;
+}
+.nav1-p2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.nav1-p2 img{
+    height: 30px;
+    cursor: pointer;
+}
+.nav2{
+    height: 60%;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    position: relative;
-    padding: 0 150px;
+    padding: 0 50px;
 }
-.nav-prt1 h4{
-    font-size: 20px;
-    cursor: pointer;
-}
-.nav-prt1 span{
-    color: aqua;
-}
-.nav-prt2{
+.nav2-p1{
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 30px;
     cursor: pointer;
 }
-.nav-part2 h4{
-    font-size: 20px;
+.nav2-p1 h4{
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 600;
 }
-.content{
-    height: calc(100% - 100px);
+.nav2-p2{
+    position: relative;
+    z-index: 999;
+}
+.nav2-p2 img{
+    height: 150px;
+    cursor: pointer;
+}
+.nav2-p3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.nav2-p3 h4{
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 600;
+}
+.center{
+    height: 70%;
     width: 100%;
     position: relative;
-    display: flex;
 }
-.content-prt1{
+.box{
+    height: 113%;
+    width: 100%;
+    position: relative;
+}
+.center img{
     height: 100%;
-    width: 63%;
-    padding-left: 150px;
-    padding-right: 110px;
-    padding-top: 80px;
+    width: 100%;
+    object-fit: cover;
+  
 }
-.content-prt1 h1{
-    font-size: 45px;
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #0000002f;
+    padding: 100px 100px;
+}
+.overlay h1{
+    font-size: 65px;
+    line-height: 80px;
     margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.623);
 }
-.content-prt1 p{
-    font-size: 16px;
-    margin-bottom: 30px;
+.overlay h3{
+    font-family: montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.623);
 }
-.content-prt1 button{
-    padding: 10px 50px;
-    color: #fff;
-    background-color: aqua;
-    border-radius: 50px;
-    border-top-left-radius: 0%;
-    border: none;
-    cursor: pointer;
-}
-.content-prt2{
-    height: 99%;
-    width: 35%;
-}
-.content-prt2 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-.main-prt2{
-    height: 100%;
-    width: 25%;
-    position: relative;
-}
-.bx1{
-    height: 250px;
-    width: 100%;
-}
-.bx1 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.bx2{
-    height: 380px;
-    width: 100%;
-    margin-top: 17px;
-}
-.bx2 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
+
+
+
