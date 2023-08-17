@@ -9,91 +9,113 @@ html,body{
     width: 100%;
 }
 .main{
-    height: 750px;
+    height: 100%;
     width: 100%;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
 }
-.bx1{
-    height: 300px;
-    width: 600px;
-    background-color: green;
-    position: absolute;
-    right: 50px;
-    bottom: 30px;
-}
-.bx1 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.bx2{
-    height: 260px;
-    width: 280px;
-    background-color: aqua;
-    position: absolute;
-    right: 50px;
-    bottom: 360px;
-}
-.bx2 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.bx3{
-    height: 340px;
-    width: 290px;
-    background-color: aqua;
-    position: absolute;
-    right: 360px;
-    bottom: 360px;
-}
-.bx3 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.bx4{
-    height: 590px;
-    width: 630px;
-    background-color: rebeccapurple;
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-}
-.bx4 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.bx5{
-    height: 380px;
-    width: 470px;
-    background-color: #c89a45b6;
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    padding-top: 60px;
-    padding-left: 40px;
-    color: #fff;
-}
-h1{
-    font-family: montserrat;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-p{
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-button{
-    padding: 18px 60px;
-    border-radius: 20px;
-    border: 2px solid #fff;
-    background-color: transparent;
-    color: #fff;
-    font-size: 17px;
+.n1 img{
+    margin-left: 40px;
     cursor: pointer;
 }
+.n2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.n2 h4{
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.n2 h4:hover{
+    color: #fff;
+    background-color: red;
+}
+.page1{
+    height: calc(100% - 80px);
+    width: 100%;
+   position: relative;
+   overflow: hidden;
+}
+.page1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.178);
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://www.freepnglogos.com/uploads/food-png/food-article-weight-watchers-30.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.box{
+    height: 70%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    right: 0;
+    top: 60px;
+    border-top: 6px solid red;
+    padding: 40px 40px;
+}
+.box h1{
+    color: #fff;
+    font-family: montserrat;
+    margin-bottom: 20px;
+}
+span{
+  color: rgba(255, 0, 0, 0.795);  
+}
+.box p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.box button{
+    padding: 13px 20px;
+    background-color: red;
+    font-family: montserrat;
+    font-size: 17px;
+    outline-width: 600;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.box button img{
+    height: 20px;
+    width: 20px;
+   margin-right: 10px;
+}
+.right{
+    height: 100%;
+    width: 50%;
+}
+
+
 
 
 
