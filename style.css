@@ -11,127 +11,173 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
+    position: relative;
+}
+.page{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.page img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+    top: 0;
 }
 .nav{
-    height: 100px;
+    height: 12%;
     width: 100%;
-    background-color: #355592;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 120px;
 }
-.nav-prt1{
+.prt1 img{
     cursor: pointer;
 }
-.nav-prt2{
+.prt2{
     display: flex;
     align-items: center;
-    color: #fff;
-    gap: 30px;
-    cursor: pointer;
+    gap: 40px;
 }
-.nav-prt2 h4{
+.prt2 h4{
     font-family: montserrat;
-    font-size: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    color: #fff;
 }
-.nav-prt2 h4:hover{
-    color: #F39C12;
+.prt2 h4:hover{
+    color: #FF8402;
 }
-.page1{
-    height: calc(100% - 100px);
+.box{
+    height: calc(100% - 12%);
     width: 100%;
     position: relative;
-    overflow: hidden;
-}
-.page1 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.overlay{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.425);
+    display: flex;
 }
 .left{
     height: 100%;
-    width: 60%;
-    display: flex;
-}
-.l1{
-    height: 100%;
     width: 50%;
-    padding: 25px ;
-    overflow-y: auto;
+    font-family: montserrat;
+    padding-left: 120px;
+    padding-top: 190px;
 }
-.l1::-webkit-scrollbar{
-    display: none;
+.left .btn{
+    font-size: 20px;
+    color: #fff;
+    background-color: #FF8402;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
 }
-.box{
-    height: 250px;
-    width: 90%;
-    background-color: #fff;
+.circle{
+    height: 150px;
+    width: 150px;
+    background-color: #E094CC;
+    position: absolute;
+    top: 68%;
+    left: 38%;
+    border-radius: 50%;
+    background-image: url(https://themesfamily.com/tm/manifesto/assets/img/dance.gif);
+    background-size: cover;
+}
+.left h1{
+    font-size: 75px;
+    color: #fff;
     margin-bottom: 10px;
 }
-.box img{
+.left p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.left .btn1{
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #43295E;
+    cursor: pointer;
+    border: none;
+    transition: all ease 0.5s;
+}
+.btn1:hover{
+    background-color: #FF8402;
+}
+.left .btn2{
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #43295E;
+    cursor: pointer;
+    border: none;
+    transition: all ease 0.5s;
+    margin-left: 20px;
+}
+.btn2:hover{
+    background-color: #FF8402;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    padding-top: 260px;
+    padding-left: 10px;
+   position: relative;
+   display: flex;
+}
+.elem{
+    height: 400px;
+    width: 450px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.elem img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    cursor: pointer;
 }
-.l2{
-    height: 100%;
-    width: 50%;
-    padding-top: 30px;
-    padding-left: 20px;
-}
-.l2 h2{
-    font-size: 22x;
-    color: #fff;
-    background-color: #355592;
-    padding: 3px 18px;
-    margin-right: 220px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-.l2 h1{
-    font-size: 45px;
-    color: #fff;
-    margin-bottom: 30px;
-}
-.l2 p{
-    font-size: 19px;
-    margin-bottom: 30px;
-    color: #fff;
-}
-.l2 button{
-    font-family: montserrat;
-    padding: 15px 20px;
-    margin-right: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
+.hide1{
+    height: 400px;
+    width: 450px;
+    background-color: #ff85020a;
+    position: absolute;
+    top: 0;
     transition: all ease 0.5s;
 }
-.l2 button:hover{
-    background-color: #F39C12;
-    color: #fff;
+.hide1:hover{
+    background-image: url(https://themesfamily.com/tm/manifesto/assets/img/portfolio/3.jpg);
+    background-size: cover;
 }
-.btn{
-    background-color: #355592;
-    color: #fff;
-    border: none;
+.hide2{
+    height: 400px;
+    width: 450px;
+    background-color: #ff85020a;
+    position: absolute;
+    top: 0;
+    transition: all ease 0.5s;
 }
-.detail{
-    background-color: black;
-    color: #fff;
-    border: 1px solid #fff;
+.hide2:hover{
+    background-image: url(https://themesfamily.com/tm/manifesto/assets/img/team/5.jpg);
+    background-size: cover;
 }
-
 
 
 
