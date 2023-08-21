@@ -11,173 +11,218 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
+    background-color:#6E54A8 ;
     position: relative;
 }
-.page{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.page img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-.overlay{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
+.parent{
+    height: 70%;
+    width: 80%;
+    background-color: #fff;
     position: absolute;
-    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
 }
 .nav{
-    height: 12%;
+    height: 10%;
     width: 100%;
-    position: relative;
+    background-color: #000;
+    color: #fff;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 120px;
+    padding: 0 50px;
 }
-.prt1 img{
-    cursor: pointer;
-}
-.prt2{
+.nav-prt1{
     display: flex;
     align-items: center;
     gap: 40px;
-}
-.prt2 h4{
-    font-family: montserrat;
-    font-size: 16px;
     cursor: pointer;
+}
+.nav-prt1 h4{
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: 500;
     transition: all ease 0.5s;
-    color: #fff;
 }
-.prt2 h4:hover{
-    color: #FF8402;
+.nav-prt1 h4:hover{
+    color: #6E54A8;
 }
-.box{
-    height: calc(100% - 12%);
+.nav-prt2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.nav-prt2 i{
+    padding: 7px;
+    background-color: rgba(255, 228, 196, 0.342);
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.nav-prt2 i:hover{
+    color: #6E54A8;
+}
+.center{
+    height: 90%;
     width: 100%;
     position: relative;
     display: flex;
 }
 .left{
     height: 100%;
-    width: 50%;
-    font-family: montserrat;
-    padding-left: 120px;
-    padding-top: 190px;
-}
-.left .btn{
-    font-size: 20px;
-    color: #fff;
-    background-color: #FF8402;
-    padding: 10px 20px;
-    font-weight: 600;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 10px;
+    width: 60%;
     position: relative;
 }
-.circle{
-    height: 150px;
-    width: 150px;
-    background-color: #E094CC;
-    position: absolute;
-    top: 68%;
-    left: 38%;
-    border-radius: 50%;
-    background-image: url(https://themesfamily.com/tm/manifesto/assets/img/dance.gif);
-    background-size: cover;
+.header{
+    padding: 30px 50px;
 }
-.left h1{
-    font-size: 75px;
-    color: #fff;
-    margin-bottom: 10px;
+.header h1{
+    font-family: montserrat;
+    font-size: 37px;
+    margin-bottom: 6px;
 }
-.left p{
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #fff;
+.header p{
+    font-size: 14px;
+    margin-bottom: 15px;
 }
-.left .btn1{
-    padding: 13px 30px;
-    border-radius: 5px;
-    font-size: 15px;
-    color: #fff;
-    background-color: #43295E;
+.header button{
+    font-family: montserrat;
+    margin-right: 20px;
     cursor: pointer;
-    border: none;
     transition: all ease 0.5s;
+}
+.btn1{
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #F2BD57;
+    border: none;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
 .btn1:hover{
-    background-color: #FF8402;
+    background-color: #6E54A8;
 }
-.left .btn2{
-    padding: 13px 30px;
-    border-radius: 5px;
-    font-size: 15px;
-    color: #fff;
-    background-color: #43295E;
+.btn2{
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border: 2px solid #F2BD57;
     cursor: pointer;
-    border: none;
-    transition: all ease 0.5s;
-    margin-left: 20px;
 }
 .btn2:hover{
-    background-color: #FF8402;
+    background-color: #F2BD57;
 }
-.right{
-    height: 100%;
-    width: 50%;
-    padding-top: 260px;
-    padding-left: 10px;
-   position: relative;
-   display: flex;
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color:#916AD7 ;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
-.elem{
-    height: 400px;
-    width: 450px;
-    display: inline-block;
-    margin-right: 10px;
-    border-radius: 50%;
+.circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: #F2BD57;
     overflow: hidden;
     position: relative;
 }
-.elem img{
+.circle img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.hide1{
-    height: 400px;
-    width: 450px;
-    background-color: #ff85020a;
+ .circle:hover .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #000000a6;
     position: absolute;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all ease 0.5s;
+    cursor: pointer;
 }
-.hide1:hover{
-    background-image: url(https://themesfamily.com/tm/manifesto/assets/img/portfolio/3.jpg);
-    background-size: cover;
+ .overlay h4{
+    font-family: montserrat;
+    font-size: 14px;
+    color: #fff;
 }
-.hide2{
-    height: 400px;
-    width: 450px;
-    background-color: #ff85020a;
+.right{
+    height: 100%;
+    width: 40%;
+    background-color: aquamarine;
+    position: relative;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.right .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #00000042;
     position: absolute;
     top: 0;
+    padding: 50px 20px;
+}
+.box{
+    height: 150px;
+    width: 250px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.bx1{
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+    padding-left: 30px;
+}
+.bx1 h3{
+    font-family: montserrat;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.bx1 h2{
+    cursor: pointer;
+    margin-bottom: 36px;
+}
+.bx1 h5{
+    font-family: montserrat;
+    font-size: 11px;
     transition: all ease 0.5s;
 }
-.hide2:hover{
-    background-image: url(https://themesfamily.com/tm/manifesto/assets/img/team/5.jpg);
-    background-size: cover;
+.bx1 h5:hover{
+    cursor: pointer;
+    color: royalblue;
 }
+.bx2{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.bx2 img{
+    cursor: pointer;
+}
+
+
 
 
 
