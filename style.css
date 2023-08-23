@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: 'Bodoni Moda', serif;
 }
 html,body{
     height: 100%;
@@ -11,122 +11,120 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
-    background-color: #C29561;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.page{
-    height: 85%;
-    width: 90%;
-    background-color: #fff;
+    background-color: #DADEE1;
     position: relative;
-    box-shadow: 0 0 10px silver;
 }
-.nav{
-    height: 10%;
-    width: 100%;
-    background-color: #B1916B;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 40px;
-    padding: 0 20px;
-    font-family: montserrat;
-}
-.nav h3{
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.nav h4{
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    color: #fff;
-}
-.nav-right{
-    height: calc(100% - 10%);
-    width: 5%;
+.main img{
     position: absolute;
-    right: 0;
-    z-index: 99;
+    right: 0px;
+    height: 650px;
 }
-.top{
-    height: 50%;
-    width: 100%;
-    background-color: #B1916B;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    gap: 18px;
-}
-.top i{
-    font-size: 20px;
-    color: #fff;
-    padding: 7px;
-    border: 1px solid #fff;   
-    border-radius: 50px;
-    cursor: pointer;
-}
-.top i:hover{
-    color: royalblue;
-}
-.bottom{
-    height: 50%;
-    width: 100%;
-    background-color: #000;
-}
-.center{
-    height: calc(100% - 10%);
-    width: 100%;
-    position: relative;
-}
-.center img{
+.overlay{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    background-color: #c8cdd10c;
+    position: absolute;
+    top: 0;
+}
+.nav{
+    height: 80px;
+    width: 80%;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-left: 130px;
+    box-shadow: 0 0 10px silver;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;
+}
+.n1 h1{
+    opacity: 0.5;
+    font-weight: 600;
+    cursor: pointer;
+}
+.n1 h1:hover{
+    opacity: 1;
+}
+.n2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.n2 h4{
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.5;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #00000075;
+    border-radius: 10px;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.n2 h4:hover{
+    opacity: 1;
+    background-color: #c8cdd173;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    
+}
+.n3 i{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
 }
 .box{
-   height: 400px;
-   width: 400px;
-   background-color: #222222;
-   position: absolute;
-   top: 10%;
-   left: 5%;
-   border: 7px solid #C29561;
-   padding: 20px;
-   color: #fff;
-   box-shadow: 0 0 10px black;
+    height: 500px;
+    width: 700px;
+    margin-top: 150px;
+    padding-top: 30px;
+    padding-left: 180px;
+    position: relative;
+}
+.box h3{
+    font-family: montserrat;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 .box h1{
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-.box span{
-    font-family: 'Tilt Prism', cursive;
-}
-.box p{
-    font-size: 13px;
-    opacity: 0.5;
-    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 .box button{
     font-family: montserrat;
-    font-weight: 600;
-    padding: 15px 30px;
-    border-radius: 20px;
-    border-top-right-radius: 0%;
-    border-bottom-left-radius: 0%;
-    font-size: 15px;
-    color: #fff;
-    background-color: #B0906A;
-    border: none;
+    font-size: 15px; 
+    padding: 10px 20px;
+    transition: all ease 1s;
     cursor: pointer;
+    border: 1px solid #000;
 }
-button:hover{
-    background-color:#C29561;
+.box button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.header{
+    height: 50px;
+    width: 360px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.header i{
+    font-size: 25px;
+    cursor: pointer;
 }
 
