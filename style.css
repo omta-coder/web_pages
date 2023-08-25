@@ -11,20 +11,25 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #DEBB9D;
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page{
+    height: 80%;
+    width: 80%;
+    background-color: #F5E8C6;
+    box-shadow: 0 0 10px #DEBB9D;
+    border-radius: 30px;
     position: relative;
     overflow: hidden;
 }
-.parent1{
-    height: 100%;
-    width: 70%;
-    background-color: #fff;
-}
-.parent2{
-    height: 100%;
-    width: 30%;
-    background-color: #D4A26F;
+.page img{
+    margin-top: 50px;
+    margin-left: 400px;
+    height: 90%;
 }
 .overlay{
     height: 100%;
@@ -33,140 +38,98 @@ html,body{
     top: 0;
 }
 .nav{
-    height: 100px;
+    height: 70px;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 60px;
 }
-.n1 img{
-    height: 100px;
+.n1 i{
+    font-size: 29px;
     cursor: pointer;
 }
 .n2{
     display: flex;
     align-items: center;
-    gap: 50px;
-    cursor: pointer;
+    gap: 40px;
 }
-.n2 h4{
-    font-family: 'Bodoni Moda', serif;
-    font-size: 15px;
+.n2 h3{
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
     position: relative;
     line-height: 30px;
-    transition: all ease 0.3s;
 }
-.n2 h4:hover{
-    color: #CB966D;
-}
-.n2 h4::after{
+h3::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 0;
     height: 2px;
-    width:0%;
-    background-color: #333;
-    transition: all ease 0.5s;
-}
-.n2 h4:hover::after{
-    width: 100%;
-}
-.n3{
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.n3 input{
-    padding: 10px 30px;
-    border-radius: 50px;
-    border: none;
-    font-size: 15px;
-}
-.n3 i{
-    padding: 10px 16px;
-    border-radius: 50px;
     background-color: #000;
-    color: #fff;
-    position: absolute;
-    left: 85%;
-    cursor: pointer;
-    transition: all ease 0.5s;
+
 }
-.n3 i:hover{
-    background-color: #CB966D;
+h3:hover::after{
+    animation-name: lineanime;
+    animation-duration: 1s;
 }
-.child{
-    height: calc(100% - 100px);
+@keyframes lineanime {
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+    
+}
+.section{
+    height: calc(100% - 70px);
     width: 100%;
-    position: relative;
-    display: flex;
+    padding: 50px 70px;
 }
-.left{
-    height: 100%;
-    width: 50%;
-    padding-top: 40px;
-    padding-left: 60px;
-}
-.left h2{
-    font-family: 'Bodoni Moda', serif;
-    font-size: 50px;
-}
-.left h1{
+h1{
     font-size: 60px;
-    margin-bottom: 20px;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
 }
-span{
-   color: #CB966D;
+h1::before{
+    content: "FACE BEAUTY COURSE";
+    position: absolute;
+    left: -7px;
+    top: -8px;
+    z-index: -1;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    color: transparent;
 }
-.left p{
-    width: 400px;
+p{
     font-size: 17px;
     margin-bottom: 30px;
 }
-.left button{
-    padding: 12px 60px;
+button{
+    padding: 13px 30px;
+    border-radius: 20px;
+    border: none;
     background-color: #000;
     color: #fff;
-    border: none;
-    transition: all ease 0.5s;
-    font-size: 15px;
-}
-.left button:hover{
-    background-color: #CB966D;
-}
-.right{
-    height: 100%;
-    width: 50%;
-    position: relative;
-    background-image: url(https://pngimg.com/d/coffee_beans_PNG97317.png);
-    cursor: pointer;
-}
-.right img{
-    height: 70%;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%,-50%);
-}
-.footer{
-    height: 50px;
-    width: 200px;
-    position: absolute;
-    left: 40px;
-    bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-.footer i{
-    font-size: 26px;
+    font-size: 14px;
     cursor: pointer;
     transition: all ease 0.5s;
 }
-.footer i:hover{
-    color: #CB966D;
+button:hover{
+    opacity: 0.5;
 }
+
 
 
