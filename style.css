@@ -11,72 +11,54 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
-    background-color: #DEBB9D;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.page{
-    height: 80%;
-    width: 80%;
-    background-color: #F5E8C6;
-    box-shadow: 0 0 10px #DEBB9D;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.page img{
-    margin-top: 50px;
-    margin-left: 400px;
-    height: 90%;
-}
-.overlay{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
+    background-color: #EEEEEE;
 }
 .nav{
-    height: 70px;
+    height: 60px;
     width: 100%;
+    background-color: #1A544D;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 40px;
+    z-index: 99;
 }
-.n1 i{
-    font-size: 29px;
+.nav-prt1 img{
+    height: 60px;
     cursor: pointer;
 }
-.n2{
+.nav-prt2{
     display: flex;
     align-items: center;
     gap: 40px;
 }
-.n2 h3{
+.nav-prt2 h4{
     font-family: montserrat;
     font-size: 16px;
+    color: #fff;
     font-weight: 600;
     cursor: pointer;
     position: relative;
     line-height: 30px;
 }
-h3::after{
+.nav-prt2 h4::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #000;
-
+    background-color: #fff;
 }
-h3:hover::after{
-    animation-name: lineanime;
+.nav-prt2 h4:hover{
+    color: #FDCD01;
+}
+.nav-prt2 h4:hover::after{
+    animation-name: line ;
     animation-duration: 1s;
 }
-@keyframes lineanime {
+@keyframes line {
     0%{
         width: 0;
         left: 0;
@@ -89,47 +71,430 @@ h3:hover::after{
         width: 0%;
         left: 100%;
     }
-    
 }
-.section{
-    height: calc(100% - 70px);
+.nav-prt3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-prt3 i{
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid silver;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.nav-prt3 i:hover{
+    color: #FDCD01;
+}
+.page{
+    height: calc(100% - 60px);
     width: 100%;
-    padding: 50px 70px;
+    background-color: #EEEEEE;
+    display: flex;
 }
-h1{
-    font-size: 60px;
-    white-space: nowrap;
-    margin-bottom: 30px;
+.page-prt1{
+    height: 100%;
+    width: 50%;
     position: relative;
-    z-index: 2;
+    padding-top: 200px;
+    padding-left: 100px;
 }
-h1::before{
-    content: "FACE BEAUTY COURSE";
-    position: absolute;
-    left: -7px;
-    top: -8px;
-    z-index: -1;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    color: transparent;
+.page-prt1 h4{
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
-p{
-    font-size: 17px;
-    margin-bottom: 30px;
+.page-prt1 h1{
+    font-family:roboto;
+   font-size: 60px;
+   margin-bottom: 40px;
+   -webkit-text-stroke: 2px #979191;
+   color: transparent;
 }
-button{
-    padding: 13px 30px;
-    border-radius: 20px;
+.page-prt1 button{
+    padding: 10px 40px;
+    border-radius: 50px;
     border: none;
-    background-color: #000;
+    background-color: #1A544D;
     color: #fff;
     font-size: 14px;
     cursor: pointer;
     transition: all ease 0.5s;
 }
-button:hover{
+.page-prt1 button:hover{
+    background-color: #18A15C;
+}
+.page-prt2{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.page-prt2 img{
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+.page1{
+
+    width: 100%;
+    padding: 30px 40px;
+    position: relative;
+}
+.p1{
+    height: 310px;
+    width: 480px;
+    background-color: rgba(192, 192, 192, 0.849);
+    position: relative;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.p1 img{
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+
+}
+.p1 img:hover{
+    height: 96%;
+}
+.p1 h4{
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.p1 h1{
+    font-family: montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.p1 a{
+    color: #18A15C;
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.p1 a:hover{
+    color: #333;
+}
+.p2{
+    height: 310px;
+    width: 750px;
+    background: linear-gradient(#FFF1AA,#FFF1AA,#FFF8D1,#FFF1AA,#FFF1AA);
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 50px;
+    top: 30px;
+    left: 40.5%;
+}
+.p2 img{
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+}
+.p2 img:hover{
+    height: 93%;
+}
+.p2 h4{
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.p2 h1{
+    font-family: montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.p2 a{
+    color: #18A15C;
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.p2 a:hover{
+    color: #333;
+}
+.p3{
+    height: 310px;
+    width: 750px;
+    background-color: #FABDAB;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    position: relative;
+}
+.p3 img{
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+
+}
+.p3 img:hover{
+    height: 96%;
+}
+.p3 h4{
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.p3 h1{
+    font-family: montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.p3 a{
+    color: #18A15C;
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.p3 a:hover{
+    color: #333;
+}
+.p4{
+    height: 310px;
+    width: 480px;
+    background-color: #fb9b0193;
+    position:absolute;
+    top: 52%;
+    left: 60.5%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.p4 img{
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%,-50%);
+
+}
+.p4 img:hover{
+    height: 90%;
+}
+.p4 h4{
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.p4 h1{
+    font-family: montserrat;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.p4 a{
+    color: #18A15C;
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.p4 a:hover{
+    color: #333;
+}
+.page2{
+    width: 100%;
+    position: relative;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header h1{
+    font-family: montserrat;
+    font-size: 42px;
+    font-weight: 700;
+}
+.nav1{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.nav1 a{
+    font-family: montserrat;
+    color: #18A15C;
+    font-size: 17px;
+    cursor: pointer;
+}
+.nav1 h4{
+    font-family: montserrat;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all ease 0.5s;
+}
+.nav1 h4:hover{
+    text-decoration: underline;
+    color: #18A15C;
+}
+.container{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+}
+.box{
+    height: 460px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid rgba(192, 192, 192, 0.671);
+}
+.top{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.top img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #18a15c00;
+    position: absolute;
+    top: 0;
+}
+.str{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.str button{
+    padding: 3px 10px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+}
+.str i{
+    font-size: 18px;
+    padding: 5px 6px;
+    border: 1px solid rgba(192, 192, 192, 0.589);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.str i:hover{
+    background-color: #18A15C;
+    color: #fff;
+}
+.bottom{
+    height: 50%;
+    width: 100%;
+    padding: 40px 30px;
+}
+.bottom h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+span{
+    font-size: 18px;
+    color: #333;
     opacity: 0.5;
 }
-
+.bottom h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255, 0, 0, 0.822);
+    margin-bottom: 25px;
+}
+.bottom button{
+    padding:15px 40px;
+    border-radius: 20px;
+    background-color: #18A15C;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    transition: all ease 0.5s;
+}
+.bottom button:hover{
+    background-color: #1A544D;
+}
+.footer{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.774);
+    position: relative;
+}
+.footer img{
+    height: 90%;
+    position: absolute;
+    left: 15%;
+}
+.footer img:hover{
+    height: 92%;
+}
+.footer h1{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 40px;
+}
+.footer h3{
+    position: absolute;
+    top: 58%;
+    left: 5%;
+    font-size: 25px;
+    font-weight: 500;
+}
+.footer button{
+    position: absolute;
+    top: 40%;
+    right: 6%;
+    cursor: pointer;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #18A15C;
+    color: #fff;
+    transition: all ease 0.5s;
+    font-size: 15px;
+}
+.footer button:hover{
+    background-color: #1A544D;
+}
 
 
