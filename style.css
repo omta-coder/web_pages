@@ -11,121 +11,108 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
-    background-color: #D0D4D5;
 }
 .nav{
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-}
-.nav-p1{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    cursor: pointer;
-}
-.nav-p1 h4{
-    text-transform: uppercase;
-    font-size: 15px;
-    font-family: montserrat;
-}
-.nav-p1 img{
     height: 80px;
-    margin-right: 90px;
-}
-.nav-p2{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 40px;
-    font-size: 25px;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.n1 img{
+    margin-left: 40px;
     cursor: pointer;
 }
-.content{
-    height: calc(100% - 100px);
+.n2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.n2 h4{
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.n2 h4:hover{
+    color: #fff;
+    background-color: red;
+}
+.page1{
+    height: calc(100% - 80px);
     width: 100%;
-    position: relative;
+   position: relative;
+   overflow: hidden;
+}
+.page1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.178);
+    position: absolute;
+    top: 0;
     display: flex;
 }
 .left{
     height: 100%;
-    width: 40%;
-    padding-top: 100px;
-    padding-left: 120px;
+    width: 50%;
+    background-image: url(https://www.freepnglogos.com/uploads/food-png/food-article-weight-watchers-30.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-.left h5{
+.box{
+    height: 70%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    right: 0;
+    top: 60px;
+    border-top: 6px solid red;
+    padding: 40px 40px;
+}
+.box h1{
+    color: #fff;
     font-family: montserrat;
-    font-size: 12px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.left h1{
-    font-size: 60px;
     margin-bottom: 20px;
 }
-.left p{
+span{
+  color: rgba(255, 0, 0, 0.795);  
+}
+.box p{
+    color: #fff;
     font-size: 16px;
-    font-weight: 500;
     margin-bottom: 40px;
 }
-.left button{
-    padding: 10px 50px;
-    border-radius: 50px;
-    border-top-left-radius: 0%;
-    border: none;
-    background-color: black;
+.box button{
+    padding: 13px 20px;
+    background-color: red;
+    font-family: montserrat;
+    font-size: 17px;
+    outline-width: 600;
     color: #fff;
+    border: none;
+    border-radius: 7px;
     cursor: pointer;
+}
+.box button img{
+    height: 20px;
+    width: 20px;
+   margin-right: 10px;
 }
 .right{
     height: 100%;
-    width: 60%;
-    position: relative;
-    padding: 80px;
-    white-space: nowrap;
-    overflow-x: auto;
-}
-.right::-webkit-scrollbar{
-    display: none;
-}
-.box{
-    height: 400px;
-    width: 360px;
-    background-color: #fff;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(0 , 0 , 0 ,0.3) ;
-    display: inline-block;
-    margin-right: 20px;
-}
-.box img{
-    height: 60%;
-    width: 100%;
-    top: 6%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-}
-.box h4{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 15px 30px;
-    border-radius: 6px;
-    background-color:#D0D4D5;
-    font-weight: 500;
-}
-.box h5{
-    position: absolute;
-    right: 0;
-    bottom: 11%;
-    padding: 15px 10px;
-    border-radius: 6px;
-    background-color:black;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
+    width: 50%;
 }
 
 
