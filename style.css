@@ -11,111 +11,134 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
+    background-color: #FAFAF5;
 }
 .nav{
-    height: 80px;
+    height: 100px;
     width: 100%;
-    background-color: #fff;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 30px;
+    position: relative;
+    background-color: #fff;
 }
-.n1 img{
-    margin-left: 40px;
-    cursor: pointer;
-}
-.n2{
+.n1{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
-.n2 h4{
+.n1 img{
+    cursor: pointer;
+}
+.n1 h4{
     font-family: montserrat;
     font-size: 18px;
     font-weight: 600;
-    color: red;
+    cursor: pointer;
+}
+.n1 h4:hover{
+    color: #214842;
+}
+.n2 input{
+    width: 250px;
     padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid silver;
+}
+.n2 i{
+    position: absolute;
+    font-size: 19px;
+    top: 33%;
+    left: 75%;
+    background-color: #E8C160;
+    padding: 7px 10px;
     border-radius: 50px;
     cursor: pointer;
 }
-.n2 h4:hover{
+.n2 i:hover{
+    background-color: #214842;
     color: #fff;
-    background-color: red;
+    transition: all ease 0.8s;
+}
+.n3{
+    display: flex;
+    gap: 30px;
+}
+.n3 i{
+    font-size: 22px;
+    background-color: #E8C160;
+    padding: 8px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all ease 0.8s;
+}
+.n3 i:hover{
+    background-color: #214842;
+    color: #fff;
 }
 .page1{
-    height: calc(100% - 80px);
+    height: calc(100% - 100px);
     width: 100%;
-   position: relative;
-   overflow: hidden;
-}
-.page1 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.overlay{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.178);
-    position: absolute;
-    top: 0;
+    position: relative;
     display: flex;
 }
 .left{
     height: 100%;
     width: 50%;
-    background-image: url(https://www.freepnglogos.com/uploads/food-png/food-article-weight-watchers-30.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    padding: 60px 40px;
 }
-.box{
-    height: 70%;
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.63);
-    position: absolute;
-    right: 0;
-    top: 60px;
-    border-top: 6px solid red;
-    padding: 40px 40px;
-}
-.box h1{
-    color: #fff;
-    font-family: montserrat;
+.left h1{
+    font-size: 55px;
+    color: #214842;
     margin-bottom: 20px;
 }
-span{
-  color: rgba(255, 0, 0, 0.795);  
-}
-.box p{
-    color: #fff;
-    font-size: 16px;
+.left p{
+    font-size: 18px;
+    line-height: 25px;
     margin-bottom: 40px;
 }
-.box button{
-    padding: 13px 20px;
-    background-color: red;
+.left button{
     font-family: montserrat;
-    font-size: 17px;
-    outline-width: 600;
-    color: #fff;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E8C160;
     border: none;
-    border-radius: 7px;
     cursor: pointer;
+    transition: all ease 0.8s;
 }
-.box button img{
-    height: 20px;
-    width: 20px;
-   margin-right: 10px;
+.left button:hover{
+    background-color: #214842;
+    color: #fff;
 }
 .right{
     height: 100%;
     width: 50%;
+    padding: 30px 20px;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
 }
-
-
+.right::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 500px;
+    width: 360px;
+    background-color: #E8C160;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
 
 
 
