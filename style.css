@@ -11,134 +11,127 @@ html,body{
 .main{
     height: 100%;
     width: 100%;
-    background-color: #FAFAF5;
 }
 .nav{
     height: 100px;
     width: 100%;
+    background-color: #355592;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
-    position: relative;
-    background-color: #fff;
+    padding: 0 120px;
 }
-.n1{
+.nav-prt1{
+    cursor: pointer;
+}
+.nav-prt2{
     display: flex;
     align-items: center;
-    gap: 40px;
-}
-.n1 img{
-    cursor: pointer;
-}
-.n1 h4{
-    font-family: montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.n1 h4:hover{
-    color: #214842;
-}
-.n2 input{
-    width: 250px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid silver;
-}
-.n2 i{
-    position: absolute;
-    font-size: 19px;
-    top: 33%;
-    left: 75%;
-    background-color: #E8C160;
-    padding: 7px 10px;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.n2 i:hover{
-    background-color: #214842;
     color: #fff;
-    transition: all ease 0.8s;
-}
-.n3{
-    display: flex;
     gap: 30px;
-}
-.n3 i{
-    font-size: 22px;
-    background-color: #E8C160;
-    padding: 8px 10px;
-    border-radius: 50px;
     cursor: pointer;
-    transition: all ease 0.8s;
 }
-.n3 i:hover{
-    background-color: #214842;
-    color: #fff;
+.nav-prt2 h4{
+    font-family: montserrat;
+    font-size: 15px;
+}
+.nav-prt2 h4:hover{
+    color: #F39C12;
 }
 .page1{
     height: calc(100% - 100px);
     width: 100%;
     position: relative;
-    display: flex;
+    overflow: hidden;
+}
+.page1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.425);
 }
 .left{
     height: 100%;
-    width: 50%;
-    padding: 60px 40px;
+    width: 60%;
+    display: flex;
 }
-.left h1{
-    font-size: 55px;
-    color: #214842;
-    margin-bottom: 20px;
-}
-.left p{
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 40px;
-}
-.left button{
-    font-family: montserrat;
-    padding: 15px 50px;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #E8C160;
-    border: none;
-    cursor: pointer;
-    transition: all ease 0.8s;
-}
-.left button:hover{
-    background-color: #214842;
-    color: #fff;
-}
-.right{
+.l1{
     height: 100%;
     width: 50%;
-    padding: 30px 20px;
-    position: relative;
-    white-space: nowrap;
-    overflow-x: auto;
+    padding: 25px ;
+    overflow-y: auto;
 }
-.right::-webkit-scrollbar{
+.l1::-webkit-scrollbar{
     display: none;
 }
-.elem{
-    height: 500px;
-    width: 360px;
-    background-color: #E8C160;
-    border-radius: 10px;
-    overflow: hidden;
-    display: inline-block;
-    margin-right: 10px;
+.box{
+    height: 250px;
+    width: 90%;
+    background-color: #fff;
+    margin-bottom: 10px;
 }
-.elem img{
+.box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     cursor: pointer;
 }
+.l2{
+    height: 100%;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.l2 h2{
+    font-size: 22x;
+    color: #fff;
+    background-color: #355592;
+    padding: 3px 18px;
+    margin-right: 220px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.l2 h1{
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.l2 p{
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.l2 button{
+    font-family: montserrat;
+    padding: 15px 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.l2 button:hover{
+    background-color: #F39C12;
+    color: #fff;
+}
+.btn{
+    background-color: #355592;
+    color: #fff;
+    border: none;
+}
+.detail{
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
 
 
 
