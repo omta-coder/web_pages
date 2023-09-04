@@ -15,91 +15,140 @@ html,body{
 .nav{
     height: 100px;
     width: 100%;
-    background-color: #222222;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 120px;
-}
-.n1{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
 }
-.n1 h4{
-    font-size: 20px;
-    color: #fff;
+.n1 img{
+    height: 70px;
     cursor: pointer;
 }
 .n2{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 .n2 h4{
     font-family: montserrat;
-    font-size: 15px;
-    color: #fff;
+    font-size: 16px;
     cursor: pointer;
+    transition: all ease 0.5s;
 }
-.n2 button{
-    font-family: montserrat;
-    font-size: 15px;
-    color: #fff;
+.n2 h4:hover{
+    color: #FAA432;
+}
+.n3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.n3 i{
+    font-size: 27px;
     cursor: pointer;
-    padding: 10px 30px;
+    padding: 10px 12px;
     border-radius: 50px;
-    border: none;
-    background-color: #51A3F5;
-    margin-left: 20px;
+    cursor: pointer;
+    transition: all ease 0.5s;
 }
-.center{
+.n3 i:hover{
+    background-color: #0D9B4D;
+    color: #fff;
+}
+.page1{
     height: calc(100% - 100px);
     width: 100%;
     position: relative;
-    display: flex;
-    overflow: hidden;
 }
-.left{
-    height: 100%;
-    width: 50%;
-    background-color: #222222;
-    padding-left: 120px;
-    padding-top: 60px;
+.header{
+    height: 200px;
+    width: 100%;
+    text-align: center;
 }
-.left h1{
-    font-size: 70px;
-    margin-bottom: 20px;
-    color: #fff;
+.header h3{
+    color: #FAA432;
+    margin-bottom: 10px;
 }
-.left p{
-    color: #fff;
-    margin-bottom: 30px;
+.header h1{
+    font-size: 45px;
+    margin-bottom: 17px;
 }
-.left button{
-   font-family:  montserrat;
-   font-size: 15px;
-    padding: 10px 30px;
-    margin-right: 20px;
+.header button{
+    padding: 10px 40px;
     border-radius: 50px;
-    cursor: pointer;
-}
-.btn1{
-    background-color: #51A3F5;
-    color: #fff;
     border: none;
+    font-size: 16px;
+    background-color: #FAA432;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    position: relative;
+    z-index: 99;
 }
-.btn2{
-    border: 1px solid #51A3F5;
-    color: #51A3F5;
+.header button:hover{
+    background-color: #0D9B4D;
 }
-.right{
+.page1 img{
+    height: 63%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.overlay{
     height: 100%;
-    width: 50%;
-    background-color: #222222;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
 }
-.right img{
+.box{
+    height: 300px;
+    width: 390px;
+    position: absolute;
+    left: 36%;
+    top: 44%;
+}
+.box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    cursor: pointer;
 }
+.b1{
+    height: 310px;
+    width: 164px;
+    margin-top: 20px;
+}
+.b1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.b2{
+    height: 330px;
+    width: 270px;
+    position: absolute;
+    top: 39%;
+    left: 80%;
+}
+.b2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.b3{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    position: absolute;
+    top: 62%;
+    left: 8%;
+}
+.b3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
 
