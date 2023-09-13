@@ -2,467 +2,219 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
 .nav{
-    height: 15%;
+    height: 10%;
     width: 100%;
+    background-color: #F2CE00;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 37px;
-    border-bottom: 1px solid silver;
+    padding: 0 20px;
+    position: fixed;
+}
+.nav h5{
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav h5:hover{
+    text-decoration: underline;
 }
 .nav-part1{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+    cursor: pointer;
 }
 .nav-part1 img{
-    height: 55px;
-    cursor: pointer;
-}
-.nav-part1 h3{
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-}
-.nav-part1 h3:hover{
-    color: #006241;
+   height: 40px;
 }
 .nav-part2{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
-.nav-part2 h4{
-    font-size: 15px;
-    font-weight: 600;
-    padding-right: 30px;
+.nav-part2 img{
+    padding-left: 90px;
     cursor: pointer;
-}
-.nav-part2 h4:hover{
-    color: #006241;
-}
-.nav-part2 button{
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid black;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.btn1:hover{
-    background-color: rgba(192, 192, 192, 0.699);
-}
-.btn2{
-    background-color: #000;
-    color: #fff;
-}
-.btn2:hover{
-    background-color: #251c1cb6;
 }
 .page1{
-    height: 85%;
+    height: 110%;
     width: 100%;
-    position: relative;
-    padding-top: 30px;
-    display: flex;
-}
-.pg1{
-    height: 100%;
-    width: 50%;
-    background-color: palevioletred;
-}
-.pg1 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.pg2{
-    height: 100%;
-    width: 50%;
-    background-color:#006241;
-    position: relative;
-}
-.pg2 .p1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    color: #fff;
-    text-align: center;
-}
-.p1 h1{
-    font-size: 50px;
-    font-weight: 600;
-}
-.p1 p{
-    font-size: 21px;
-    line-height: 35px;
-    margin-top: 20px;
-}
-.p1 button{
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid #fff;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;background-color: transparent;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.p1 button:hover{
-    background-color: #021b133f;
+    background-image: url(https://hdn-1.jioretailer.com/jioretailer/company/5/applications/63ebc2f28e2f6e331f674caa/theme/pictures/free/original/theme-image-1690902178378.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .page2{
-    height: 90%;
+    height: 100%;
     width: 100%;
-    background-color: #EB81A5;
-    margin-top: 30px;
-    display: flex;
-}
-.page2-part1{
-    height: 100%;
-    width: 50%;
-    background-color: transparent;
-    position: relative;
-}
-.prt1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    text-align: center;
-}
-.prt1 h1{
-    font-size: 50px;
-}
-.prt1 p{
-    font-size: 22px;
-    margin-top: 30px;
-    line-height: 30px;
-    font-weight: 600;
-}
-.prt1 button{
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 600;
-    border: 1px solid #000;
-    background-color: transparent;
-    margin-top: 30px;
     cursor: pointer;
+    margin-top: 80px;
 }
-.prt1 button:hover{
-    background-color: #6404242f;
-}
-.page2-part2{
-    height: 100%;
-    width: 50%;
-}
-.page2-part2 img{
+.page2 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 .page3{
-    height: 90%;
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-}
-.page3-part1{
     height: 100%;
-    width: 50%;
+    width: 100%;
+    margin-top: 40px;
 }
-.page3-part1 img{
+.page3 video{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-.page3-part2{
-    height: 100%;
-    width: 50%;
-    background-color: #8F8BF4;
-    position: relative;
-}
-.page3-part2 .box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    text-align: center;
-}
-.box h1{
-    font-size: 50px;
-}
-.box p{
-    font-size: 22px;
-    margin-top: 20px;
-    line-height: 30px;
-}
-.box button{
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid #000;
-    background-color: transparent;
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 30px;
-    cursor: pointer;
-}
-.box button:hover{
-    background-color: #403ca546;
 }
 .page4{
-    height: 90%;
+    height: 160%;
     width: 100%;
-    margin-top: 30px;
-    display: flex;
+    margin-top: 60px;
+    padding: 0 20px;
 }
-.page4-part1{
-    height: 100%;
-    width: 50%;
-    background-color: #FC6446;
-    position: relative;
-}
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    text-align: center;
-}
-.center h1{
-    font-size: 50px;
-}
-.center p{
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 20px;
-    line-height: 30px;
-}
-.center button{
-    padding: 10px 20px;
-    margin-top: 30px;
-    border-radius: 50px;
-    border: 1px solid #000;
-    background-color: transparent;
-    font-size: 16px;
-    font-weight: 600;
+.box{
+    height: 500px;
+    width: 32%;
+    background-color: palevioletred;
+    display: inline-block;
+    margin: 5px;
     cursor: pointer;
+    border: 1px solid silver;
 }
-.center button:hover{
-    background-color: #7c1c093b;
-}
-.page4-part2{
-    height: 100%;
-    width: 50%;  
-}
-.page4-part2 img{
+.box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.nav2{
-    height: 20%;
+.header{
+    height: 200px;
     width: 100%;
-    margin-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-evenly;
 }
-.nav2 p{
+.header h4{
+    font-family: montserrat;
     font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
-}
-.nav3{
-    height: 10%;
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid silver;
-}
-.nav3 h5{
-    font-size: 15px;
-    font-weight: 600;
 }
 .page5{
-    height: 65%;
+    height: 100%;
     width: 100%;
-    margin-top: 10px;
+}
+.page5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hdr{
+    height: 150px;
+    width: 100%;
     display: flex;
-   gap: 60px;
-   padding: 0 50px;
-   padding-top: 20px;
-   border-bottom: 1px solid silver;
+    align-items: center;
+    justify-content: center;
 }
-.clm1{
+.hdr h1{
+    font-size: 45px;
+}
+.ftr{
+    height: 150px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 30px;
+    justify-content: space-around;
+   
 }
-.clm1 h3{
-    font-size: 21px;
-    font-weight: 500;
-}
-.clm1 h5{
-    font-size: 14px;
-    font-weight: 500;
-    color: #0000009c;
+.ftr img{
+    height: 50px;
     cursor: pointer;
 }
-.clm1 h5:hover{
-    color: #000;
-}
-.clm2{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 30px;
-}
-.clm2 h3{
-    font-size: 21px;
-    font-weight: 500;
-}
-.clm2 h5{
-    font-size: 14px;
-    font-weight: 500;
-    color: #0000009c;
-    cursor: pointer;
-}
-.clm2 h5:hover{
-    color: #000;
-}
-.clm3{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 30px;
-}
-.clm3 h3{
-    font-size: 21px;
-    font-weight: 500;
-}
-.clm3 h5{
-    font-size: 14px;
-    font-weight: 500;
-    color: #0000009c;
-    cursor: pointer;
-}
-.clm3 h5:hover{
-    color: #000;
-}
-.clm4{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 30px;
-}
-.clm4 h3{
-    font-size: 21px;
-    font-weight: 500;
-}
-.clm4 h5{
-    font-size: 14px;
-    font-weight: 500;
-    color: #0000009c;
-    cursor: pointer;
-}
-.clm4 h5:hover{
-   color: #000;
-}
-.clm5{
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    gap: 30px;
-}
-.clm5 h3{
-    font-size: 21px;
-    font-weight: 500;
-}
-.clm5 h5{
-    font-size: 14px;
-    font-weight: 500;
-    color: #0000009c;
-    cursor: pointer;
-}
-.clm5 h5:hover{
-    color: #000;
+.ftr h5{
+    font-size: 15px;
+   line-height: 70px;
+   cursor: pointer;
 }
 .footer{
-    height: 12%;
+    height: 320px;
     width: 100%;
-    margin-top: 10px;
+    background-color: #6A6B68;
     display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 40px;
+    justify-content: space-between;
     padding: 0 30px;
-}
-.footer .icon{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    cursor: pointer;
-}
-.icon i{
-    background-color: #000;
+    padding-right: 150px;
+    padding-top: 40px;
     color: #fff;
-    font-size: 18px;
-    padding: 8px 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    
+    position: relative;
+    border-bottom: 1px solid silver;
 }
-.ftr1{
-    height: 30px;
+.f1{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+.footer h5{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.footer h6{
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.f2{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+.f3{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+.f4{
+   display: flex;
+   flex-direction: column; 
+   gap: 20px;
+}
+.f4 .search{
+    width: 400px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+}
+ .btn{
+    background-color: #F2CE00;
+    color: #000;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 11.5%;
+    top: 26%;
+    cursor: pointer;
+}
+.footer1{
+    height: 100px;
     width: 100%;
+    background-color: #6A6B68;
     display: flex;
     align-items: center;
-    padding: 0 30px;
-    gap: 30px;
 }
-.ftr1 h4{
-    font-size: 16px;
+.footer1 h4{
+    color: #fff;
+    font-size: 12px;
     font-weight: 500;
-    cursor: pointer;
+    padding-left: 150px;
 }
-.ftr1 h4:hover{
-    text-decoration: underline;
-}
-.ftr2{
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-}
-.ftr2 h5{
-    font-size: 15px;
-    font-weight: 500;
-    color: #0000008c;
-}
-.ftr3{
-    height: 30px;
-    width: 100%;
-}
+
+
 
 
 
