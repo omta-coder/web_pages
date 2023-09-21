@@ -1,13 +1,20 @@
+var istatus = document.querySelector("h5")
 
-var btn = document.querySelector("button");
-var h1 = document.querySelector("h1");
+var btn = document.querySelector("#add")
+var check = 0
 
 btn.addEventListener("click",function(){
-    var a = Math.floor(Math.random()*10)
-    var b = Math.floor(Math.random()*10)
-    var c = Math.floor(Math.random()*10)
-    var d = Math.floor(Math.random()*10)
 
-    h1.innerHTML=`${a}${b}${c}${d}`
-    console.log(a,b,c,d);
+    if(check==0){
+        istatus.innerHTML="Friends"
+        istatus.style.color="green"
+        btn.innerHTML = "Remove Friend"
+        check=1;
+    }
+    else{
+        istatus.innerHTML="Stranger"
+        istatus.style.color="red"
+        btn.innerHTML = "Add Friend"
+        check=0
+    }
 })
