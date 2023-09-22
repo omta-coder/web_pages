@@ -1,20 +1,20 @@
-var istatus = document.querySelector("h5")
+var con = document.querySelector("#container")
+var love = document.querySelector("i")
 
-var btn = document.querySelector("#add")
-var check = 0
+con.addEventListener("dblclick",function(){
+ 
+        love.style.transform=`translate(-50%,-50%) scale(2)`;
+        love.style.opacity=0.8;
+        love.style.color="red"
 
-btn.addEventListener("click",function(){
+        setTimeout(function(){
+            love.style.opacity=0
+            love.style.color="transparent" 
+        },1000)
 
-    if(check==0){
-        istatus.innerHTML="Friends"
-        istatus.style.color="green"
-        btn.innerHTML = "Remove Friend"
-        check=1;
-    }
-    else{
-        istatus.innerHTML="Stranger"
-        istatus.style.color="red"
-        btn.innerHTML = "Add Friend"
-        check=0
-    }
+        setTimeout(function(){
+            love.style.transform=`translate(-50%,-50%) scale(0)`;
+            love.style.color="transparent" 
+        },2000)
+        
 })

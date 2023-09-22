@@ -9,40 +9,32 @@ html,body{
     width: 100%;
 }
 body{
+    background-color: lightseagreen;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: cornflowerblue;
 }
-#card{
+#container{
+    height:300px;
+    width: 350px;
     border-radius: 10px;
-    height: 450px;
-    width: 300px;
     background-color: #fff;
-    padding: 30px;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
-#card img{
-    height: 55%;
+#container img{
+    height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
     object-position: center;
 }
-#card h1{
-    font-size: 25px;
-    margin: 10px 0;
-}
-#card h5{
-    font-size: 25px;
-    color: red;
-    margin: 20px;
-}
-#card button{
-    background-color: cadetblue;
+#container i{
     color: #fff;
-    font-weight: 700;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 50px;
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform ease 0.5s;
 }
