@@ -3,41 +3,61 @@
     padding: 0;
     box-sizing: border-box;
     font-family: gilroy;
-    color: #fff;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
-#main{
-    height: 100%;
-    width: 100%;
-    background-color: #111;
-    position: relative;
-}
-.elem{
-    height: 120px;
-    width: 100%;
-    border-bottom: 2px solid #fff;
+body{
+    background-color: rgb(80, 155, 199);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    
+    justify-content: center;
 }
-.elem h1{
-    font-size: 5vw;
+#card{
+    height: 400px;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000;
     position: relative;
-    z-index: 9;
-    mix-blend-mode: difference;
 }
-.elem img{
-    height: 100px;
-    width: 100px;
+#storiyan{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    background:linear-gradient(red,pink,yellow,green,purple,rgb(214, 111, 128));
+    padding: 3px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+.story img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     position: absolute;
-    opacity: 0;
-    transition: all linear 0.3s;
+    display: none;
 }
