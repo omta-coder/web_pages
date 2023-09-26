@@ -36,3 +36,21 @@ storiyan.addEventListener("click",function(dets){
         document.querySelector("#full-screen").style.display = "none"
     },1000);
 });
+
+var post = document.querySelector("#post-center");
+var like = document.querySelector("#post-center i");
+
+post.addEventListener("dblclick",function(){
+    like.style.transform=`translate(-50%,-50%) scale(2)`;
+    like.style.opacity = 0.8;
+
+    setTimeout(function() {
+        like.style.opacity = 0;
+        like.style.color = "transparent";
+    }, 1000);
+
+    setTimeout(function() {
+        like.style.transform=`translate(-50%,-50%) scale(0)`;
+        like.style.color = "transparent";
+    }, 2000);
+})
