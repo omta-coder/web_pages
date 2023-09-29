@@ -1,30 +1,23 @@
-
-var tl = gsap.timeline()
-tl.from("h3",{
-    y:-50,
-    duration:0.5,
-    delay:0.5,
+gsap.from("#img1",{
+    delay:0.4,
     opacity:0,
-    stagger:0.3
-})
-tl.from("h1",{
-    x:-300,
     duration:1,
-    opacity:0,
-    stagger:0.3
+    y:60
 })
-
-tl.from("img",{
-    rotate:100,
+gsap.from("#img2",{
+    delay:0.4,
+    opacity:0,
     duration:1,
-    stagger:0.8,
-    x:400,
-    opacity:0
+    x:60
 })
-tl.from("h4",{
-    y:50,
-    duration:0.5,
-    delay:0.5,
+gsap.from("#img3",{
+    delay:0.4,
     opacity:0,
-    stagger:0.3
+    duration:1,
+    y:-60
+})
+gsap.from("#main h1",{
+    delay:0.4,
+    opacity:0,
+    duration:1,
 })
