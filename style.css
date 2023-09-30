@@ -2,121 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
-#main{
+#page1{
     height: 100%;
     width: 100%;
-    position: relative;
+    background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
-#nav{
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#nav h2{
-    font-size: 30px;
-    font-weight: 200;
-    transition: all ease 0.5s;
-}
-#nav h2 span{
-    color: springgreen;
-}
-#nav #part2{
-    display: flex;
-    align-items: center;
-}
-#nav #part2 a{
-    text-decoration: none;
-    margin: 20px;
-    color: #222;
-}
-#nav #part2 a:nth-last-child(1){
-    padding: 7px 18px;
-    border-radius: 50px;
-    position: relative;
-    border: 1px solid #000;
-    overflow: hidden;
-}
-#nav #part2 a:nth-last-child(1) #green{
+#page2{
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    background-color: springgreen;
-    transition: left ease 0.5s;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#nav #part2 a:nth-last-child(1):hover #green{
-    left: 0;
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(40, 155, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#nav #part2 a:nth-last-child(1) h5{
-    font-weight: 500;
-    position: relative;
-    z-index: 99;
-}
-#main>h1{
-    font-size: 5vw;
-    font-weight: 300;
-    width: 50%;
-    position: relative;
-    z-index: 99;
-    text-align: center;
-    text-transform: capitalize;
-}
-#main>h1::after{
-    content: "";
-    position: absolute;
-    width: 35%;
-    height: 16px;
-    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
-    bottom: -5%;
-    left: 50%;
-    background-size: cover;
-    transform: translate(-50%,0);
-
-}
-
-#main #img1{
-    height: 400px;
-    width: 270px;
-    position: absolute;
-    left: 7%;
-    top: 20%;
-
-}
-#main #img2{
-    height: 230px;
-    width: 270px;
-    position: absolute;
-    right: 24%;
-    top: 18%;
-
-}
-#main #img3{
-    height: 250px;
-    width: 240px;
-    position: absolute;
-    right: 7%;
-    bottom: 10%;
-
-}
-#main img{
-    transition: margin 0.8s ease;
-}
-#main img:hover{
-    margin-top: -10px;
+#box{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(to right bottom,lightblue,royalblue);
+    border-radius: 50%;
 }
