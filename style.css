@@ -11,30 +11,26 @@ html,body{
 #page1{
     height: 100%;
     width: 100%;
-    background-color: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #dadada;
 }
 #page2{
     height: 100%;
     width: 100%;
-    background-color: lightpink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #8b8888;
 }
 #page3{
     height: 100%;
     width: 100%;
-    background-color: rgb(40, 155, 25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #272727;
 }
-#box{
-    height: 300px;
-    width: 300px;
-    background: linear-gradient(to right bottom,lightblue,royalblue);
-    border-radius: 50%;
+#page2 img{
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+
+    
