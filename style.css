@@ -7,30 +7,86 @@
 html,body{
     height: 100%;
     width: 100%;
+    color: #fff;
 }
-#page1{
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://devis-react.vercel.app/images/background/hero-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: #070E1B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 6vw;
+}
+nav img{
+    cursor: pointer;
+}
+#part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vh;
+}
+#part2 h4{
+    cursor: pointer;
+}
+nav #home{
+    color: #FEC544;
+}
+#center{
+    position: relative;
+    display: flex;
+}
+#left{
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#left #one{
+    margin-right:18vw;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    color: #FEC544;
+    font-weight: 500;
+}
+#left #two{
+    font-size: 9vw;
+    line-height: .9;
+    margin-bottom: 2vw;
+}
+#left #three{
+    margin-right:2vw;
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+}
+button{
+    padding: 1vw 3vw;
+    background-color: #FEC544;
+    border-radius: 50px;
+    border: none;
+    font-size: 2vh;
+    font-weight: 700;
+    margin-right: 20vw;
+    cursor: pointer;
+}
+#right{
+    height: 90vh;
+    width: 50vw;
+    overflow: hidden;
+}
+#right img{
     height: 100%;
     width: 100%;
-    background-color: #dadada;
-}
-#page2{
-    height: 100%;
-    width: 100%;
-    background-color: #8b8888;
-}
-#page3{
-    height: 100%;
-    width: 100%;
-    background-color: #272727;
-}
-#page2 img{
-    height: 100%;
-    width: 20%;
     object-fit: cover;
-    position:relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
-
-
-    
