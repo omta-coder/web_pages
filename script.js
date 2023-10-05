@@ -1,23 +1,20 @@
+const img = document.querySelector("img")
+const cursor = document.querySelector("#cursor")
 
-var tl = gsap.timeline({
-    repeat:-1
-});
+img.addEventListener("mousemove",function(dets){
+    const rotx =58 - dets.x/11;
+    const roty = Math.abs(rotx);
 
-tl.to(".imagecontainer",{
-    width:"100%",
-    ease:Expo.easeInOut,
-    duration:1,
-    stagger:2
-},'a')
-tl.to(".text h1",{
-    ease:Expo.easeInOut,
-    stagger:2,
-    duration:1,
-    top:0
-},'a')
-tl.to(".text h1",{
-    delay:2,
-    ease:Expo.easeInOut,
-    stagger:2,
-    top:"-100%"
-},'a')
+    img.style.transform = `rotateX(${rotx}deg) rotateY(${-roty}deg)`
+})
+
+img.addEventListener("mouseleave",function(dets){
+    setTimeout(() => {
+        img.style.transform = `rotateX(0deg) rotateY(0deg)` 
+    }, 1000);
+    
+})
+document.addEventListener("mousemove",function(dets){
+    cursor.style.left = `${dets.x}px`
+    cursor.style.top = `${dets.y}px`
+})
