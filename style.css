@@ -2,153 +2,573 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
-html{
-    perspective: 100px;
-}
-#main{
-    height: 100%;
+.nav{
+    height: 10%;
     width: 100%;
-    background-color: #eee;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: none;
-}
-#nav{
-    height: 60px;
-    width: 100%;
-    position: absolute;
-    top: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    background-color: #fff;
+    padding: 0px 25px;
+    position: fixed;
+    z-index: 9;
 }
-#nav h4{
-    font-size: 14px;
-    font-family:"roboto";
-    font-weight: 100;
-    text-transform: uppercase;
+.nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
 }
-#nav i{
+.nav-part1 i{
+    position: absolute;
+    left: 38.7%;
+}
+.nav img{
+    height:30px;
+    cursor: pointer;
+}
+.nav-part1 h4{
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 7px 5px;
+    border-radius: 5px;
+    background-color: transparent;
 }
-img{
-    height: 430px;
-    width: 330px;
+.nav-part1 h4:hover{
+    background-color: rgba(0, 0, 0, 0.116);
+    
+}
+.nav-part1 input{
+    width: 600px;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #CDCDCD;
+    border: none;
+    border: 2px solid #CDCDCD;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-part2 h3{
+    padding: 10px 12px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-part2 h3:hover{
+    background-color: rgba(0, 0, 0, 0.116);
+}
+.nav-part2 i{
+    padding: 5px 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.parent h6{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    font-size: 12px;
+    font-weight: 500;
+}
+.child1{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.child1 .box{
+    height: 60%;
+    width: 70%;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.child1 i{
+    position: absolute;
+    top: 22%;
+    left: 7px;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 3px 5px;
+    background-color: #ffffff70;
+}
+.child1 i{
+    position: fixed;
+    top: 18%;
+}
+.child1 i:hover{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.box img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    transition: transform 0.2s;
-    transform-origin: 50% 0;
-    object-position: 0% 70%;
-    perspective: -1000px;
-    /*transform: rotateX(20deg) rotateY(30deg);*/
-    transform-style: preserve-3d;
 }
-h3{
-    font-size: 19px;
-    text-transform: uppercase;
-    z-index: 99;
-    position: absolute;
-    top: 21%;
-    width: 33%;
-    letter-spacing: 0.5px;
-    text-align: center;
+.box .overlay{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   top: 0;
+   cursor: pointer;
+}
+.overlay h1{
+    font-size: 0%;
+}
+.box .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+}
+.box .overlay:hover h1{
+    font-size: 25px;
     color: #fff;
-    mix-blend-mode: difference;
-    font-family: roboto;
+    text-align: center;
+    padding-top: 90px;
+    font-weight: 500;
 }
-#text1{
-    position: absolute;
-    top: 29%;
+.child2{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.child2 .nav1{
+    height: 50px;
     width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-#text1::-webkit-scrollbar{
-    display: none;
-}
-#text1 h1{
-    display: inline-block;
-    font-family: roboto;
-    font-size: 100px;
-    margin-right: 30px;
-    text-transform: uppercase;
-    animation-name: scroll;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-#text2{
     position: absolute;
-    top: 45%;
-    width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    /*z-index: 100;*/
+    top: 25%;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 10px;
 }
-#text2::-webkit-scrollbar{
-    display: none;
+.nav1 i{
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 50px;
+    cursor: pointer;
 }
-#text2 h1{
-    display: inline-block;
-    font-family: roboto;
-    font-size: 100px;
-    margin-right: 30px;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    text-transform: uppercase;
-    animation-name: scroll;
-    animation-duration: 1.5s;
-    animation-direction: reverse;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.nav1 i:hover{
+    background-color: rgba(0, 0, 0, 0.192);
 }
-#text3{
+.nav1-part2{
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav1-part2 h3{
+    padding: 14px 14px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+}
+.nav1-part2 h3:hover{
+    background-color: rgba(0, 0, 0, 0.192);   
+}
+.nav1-part2 .save{
+    padding: 14px 14px;
+    border-radius: 50px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;  
+}
+.parent h4{
     position: absolute;
-    top: 60%;
+    top: 33%;
+    left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.parent h2{
+    position: absolute;
+    top: 39%;
+    left: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.parent p{
+    position: absolute;
+    top: 52%;
+    left: 10px;
+}
+.nav2{
+    height: 70px;
     width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+    position: absolute;
+    top: 63%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 7px;
 }
-#text3::-webkit-scrollbar{
-    display: none;
+.nav2 .circle{
+    height: 50px;
+    width: 50px;
+    background-color: #e66565;
+    border-radius: 50px;
+    overflow: hidden;
 }
-#text3 h1{
-    display: inline-block;
-    font-family: roboto;
-    font-size: 100px;
-    margin-right: 30px;
-    text-transform: uppercase;
-    animation-name: scroll;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.circle img{
+    cursor: pointer;
+}
+.nav2 h5{
+    font-size: 15px;
+    font-weight: 500;
+}
+.move3{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    top: 75%;
+    padding: 0 10px;
+}
+.move3 h5{
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 4px 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.move3 h5:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.521);
+   
+}
+.move3 i{
+    cursor: pointer;
 }
 
-@keyframes scroll {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-100% - 32px));
-    }
- }
- #cursor{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: rgb(255,22,65);
+.child2 h1{
     position: absolute;
- }
+    top: 86%;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.664);
+}
+.page2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.page2 h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 6px;
+}
+.pg1{
+    height: 400px;
+    width: 250px;
+    background:linear-gradient(rgba(135, 207, 235, 0.596) , rgba(255, 192, 203, 0.76));
+    margin-left: 40px;
+    border-radius: 15px;
+    position: relative;
+}
+.pg1 h5{
+    position: absolute;
+    color: black;
+    top: 10px;
+    left:10px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 3px 5px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.pg1 .box1{
+    height: 150px;
+    width: 200px;
+    background-color: #e66565;
+    position: absolute;
+    left: 25px;
+    top: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pg1 .overlay1{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   top: 0;
+   cursor: pointer;
+   border-radius: 15px;
+   color: #fff;
+}
+.overlay1 h3{
+    font-size: 0%;
+}
+.overlay1 p{
+    font-size: 0%;
+}
+.pg1 .overlay1:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    overflow: hidden;
+}
+.pg1 .overlay1:hover h3{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 200px;
+    font-weight: 500;
+}
+.pg1 .overlay1:hover h5{
+    position: absolute;
+    color: black;
+    top: 10px;
+    left:10px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 3px 5px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.pg1 .overlay1:hover p{
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 140px;
+}
+
+.pg2{
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    left: 300px;
+    top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.pg2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pg2 .overlay2{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   top: 0;
+   cursor: pointer;
+   border-radius: 15px;
+   color: #fff;
+}
+.pg2 .overlay2:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    overflow: hidden;
+}
+.overlay2 h3{
+    font-size: 0%;
+}
+.pg2 .overlay2:hover h3{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: 500;
+}
+.overlay2 p{
+    font-size: 0%;
+}
+.pg2 .overlay2:hover p{
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 60px;
+}
+.pg3{
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    left: 560px;
+    top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.pg3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pg3 .overlay3{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   top: 0;
+   cursor: pointer;
+   border-radius: 15px;
+   color: #fff;
+}
+.pg3 .overlay3:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    overflow: hidden;
+}
+.overlay3 h3{
+    font-size: 0%;
+}
+.pg3 .overlay3:hover h3{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: 500;
+}
+.overlay3 p{
+    font-size: 0%;
+}
+.pg3 .overlay3:hover p{
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 60px;
+}
+.pg4{
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    left: 820px;
+    top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.pg4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pg4 .overlay4{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   top: 0;
+   cursor: pointer;
+   border-radius: 15px;
+   color: #fff;
+}
+.pg4 .overlay4:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    overflow: hidden;
+}
+.overlay4 h3{
+    font-size: 0%;
+}
+.pg4 .overlay4:hover h3{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: 500;
+}
+.overlay4 p{
+    font-size: 0%;
+}
+.pg4 .overlay4:hover p{
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+.pg4 h5{
+    position: absolute;
+    color: black;
+    top: 10px;
+    left:10px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 3px 5px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.pg4 .overlay4:hover h5{
+    position: absolute;
+    color: black;
+    top: 10px;
+    left:10px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 3px 5px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.pg5{
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    left: 1080px;
+    top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.pg5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pg5 .overlay5{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   top: 0;
+   cursor: pointer;
+   border-radius: 15px;
+   color: #fff;
+}
+.pg5 .overlay5:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    overflow: hidden;
+}
+.overlay5 h3{
+    font-size: 0%;
+}
+.pg5 .overlay5:hover h3{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: 500;
+}
+.overlay5 p{
+    font-size: 0%;
+}
+.pg5 .overlay5:hover p{
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 60px;
+}
+
+
+
+
+
+
