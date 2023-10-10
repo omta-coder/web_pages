@@ -1,20 +1,30 @@
-const img = document.querySelector("img")
-const cursor = document.querySelector("#cursor")
-
-img.addEventListener("mousemove",function(dets){
-    const rotx =58 - dets.x/11;
-    const roty = Math.abs(rotx);
-
-    img.style.transform = `rotateX(${rotx}deg) rotateY(${-roty}deg)`
+gsap.to("#page",{
+    scrollTrigger:{
+        trigger:`#center-image`,
+        start:`top 20%`,
+        end:`bottom top`,
+        //markers:true,
+        pin:true,
+        scrub:.5
+    }
 })
 
-img.addEventListener("mouseleave",function(dets){
-    setTimeout(() => {
-        img.style.transform = `rotateX(0deg) rotateY(0deg)` 
-    }, 1000);
-    
+
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:`#page1`,
+        start:`top 70%`,
+        end:`50% 60%`,
+        //markers:true,
+        scrub:.5
+    }
 })
-document.addEventListener("mousemove",function(dets){
-    cursor.style.left = `${dets.x}px`
-    cursor.style.top = `${dets.y}px`
+
+tl.from("#page1 h1",{
+    opacity:0,
+    y:100
+})
+.from("#page1 h5",{
+    opacity:0,
+    y:100
 })

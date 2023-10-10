@@ -2,154 +2,115 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
     width: 100%;
-}
-html{
-    perspective: 100px;
+    color: #fff;
 }
 #main{
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    height: 6vh;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0vh 5vw;
+    gap: 65vh;
+}
+nav h1{
+    font-size: 1vw;
+}
+nav .nue{
+    letter-spacing: .5vw;
+}
+#page{
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#center-image{
+    height: 66vh;
+    width: 30vw;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#center-image img{
     height: 100%;
     width: 100%;
-    background-color: #eee;
+    object-fit: cover;
+}
+#page h1{
+    font-size: 16vw;
+    text-align: center;
+    line-height: .8;
+}
+#page .digi{
+    position: relative;
+    font-family: serif;
+    font-weight: 100;
+    z-index: 999;
+}
+#page1{
+    height: 50vh;
+    width: 100vw;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    cursor: none;
 }
-#nav{
-    height: 60px;
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-}
-#nav h4{
-    font-size: 14px;
-    font-family:"roboto";
-    font-weight: 100;
-    text-transform: uppercase;
-}
-#nav i{
-    font-size: 17px;
-    font-weight: 600;
-}
-img{
-    height: 430px;
-    width: 330px;
-    object-fit: cover;
-    transition: transform 0.2s;
-    transform-origin: 50% 0;
-    object-position: 0% 70%;
-    perspective: -1000px;
-    /*transform: rotateX(20deg) rotateY(30deg);*/
-    transform-style: preserve-3d;
-}
-h3{
-    font-size: 19px;
-    text-transform: uppercase;
-    z-index: 99;
-    position: absolute;
-    top: 21%;
-    width: 33%;
-    letter-spacing: 0.5px;
+#page1 h1{
     text-align: center;
-    color: #fff;
-    mix-blend-mode: difference;
-    font-family: roboto;
+    margin-bottom: 40px;
+    font-size: 1.6vw;
 }
-#text1{
-    position: absolute;
-    top: 29%;
-    width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+#page1 h5{
+    color: #B88B8B;
+    font-size: 1.3vw;
 }
-#text1::-webkit-scrollbar{
-    display: none;
+#page1 h5 i{
+    font-family: serif;
 }
-#text1 h1{
-    display: inline-block;
-    font-family: roboto;
-    font-size: 100px;
-    margin-right: 30px;
-    text-transform: uppercase;
-    animation-name: scroll;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-#text2{
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    /*z-index: 100;*/
-}
-#text2::-webkit-scrollbar{
-    display: none;
-}
-#text2 h1{
-    display: inline-block;
-    font-family: roboto;
-    font-size: 100px;
-    margin-right: 30px;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    text-transform: uppercase;
-    animation-name: scroll;
-    animation-duration: 1.5s;
-    animation-direction: reverse;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-#text3{
-    position: absolute;
-    top: 60%;
-    width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-#text3::-webkit-scrollbar{
-    display: none;
-}
-#text3 h1{
-    display: inline-block;
-    font-family: roboto;
-    font-size: 100px;
-    margin-right: 30px;
-    text-transform: uppercase;
-    animation-name: scroll;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+#page2{
+    height: 100vh;
+    width: 100vw;
 }
 
-@keyframes scroll {
-    0%{
-        transform: translateX(0);
+@media (max-width:600px) {
+    nav{
+        height: 5vh;
+        padding: 0 5vw;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    100%{
-        transform: translateX(calc(-100% - 32px));
+    nav h1{
+        display: none;
     }
- }
- #cursor{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #fff;
-    mix-blend-mode: difference;
-    position: absolute;
- }
+    nav .nue{
+        display: block;
+        font-size: 3vw;
+    }
+    #page{
+        height: 200vh;
+        width: 100vw;
+    }
+    #center-image{
+        height: 100vh;
+        width: 100vw;
+    }
+    
+}
