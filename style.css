@@ -2,89 +2,123 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
     width: 100%;
-    font-family: gilroy;
 }
 #main{
+    width: 100%;
+    height: 100vh;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
     height: 100%;
     width: 100%;
-    background-color: red;
-    display: flex;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#workingarea{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1400px;
+    height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 #nav{
-    height: 80px;
     width: 100%;
-    background-color: transparent;
+    padding: 40px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    z-index: 9;
+    justify-content: space-between;
 }
 #nav img{
-    height: 70px;
+    height: 80px;
 }
-#nav-prt2{
+#nleft, #nright{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
 }
-#nav-prt2 h4{
-    font-size: 18px;
-}
-#nav-prt3 i{
-    margin-right: 20px;
-    font-size: 19px;
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: gilroy;
 }
-#left{
-    height: 100%;
-    width: 70%;
-    background-color: #fff;
-    position: relative;
-}
-#left h1{
-    font-size: 80px;
-    margin-top: 200px;
-    margin-left: 150px;
-}
-#left span{
-    font-size: 150px;
-    line-height: 100px;
-    color: #277541;
-    transition: all ease 0.5s;
-}
-#left span:hover{
-    color: #082A11;
-}
-#box{
-    height: 400px;
-    width: 300px;
-    background-color: #385237;
+#hero{
+    display: flex;
+    justify-content: space-between;
     position: absolute;
-    top: 20%;
-    right: -15%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-40%);
+    width: 100%;
+}
+#heroleft{
+    min-width:50%;
+}
+#heroleft .elem{
+    position: relative;
+    height: 8vw;
     overflow: hidden;
 }
-#box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+#heroleft .elem h1:nth-child(1){
+    top: 0;
 }
-#right{
-    height: 100%;
-    width: 30%;
-    background-color: #082A11;
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: kajiro;
+    color: #fff;
+    font-weight: 100;
+    font-size: 10vw;
 }
-#right img{
-    height: 100%;
+#heroleft button{
+    pointer-events: all;
+    padding: .4vw 1.6vw;
+    font-size: 3vw;
+    font-family: kajiro;
+    margin-top: 2vw;
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:23%;
+    color: #fff;
+}
+#heroright p{
+    font-size: 13px;
+    text-align: right;
+    font-weight: 300;
+}
+#heroright #imagediv{
     width: 100%;
-    object-fit: cover;
+    height: 160px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+   background-image: url(https://images.unsplash.com/photo-1551024739-78e9d60c45ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+   background-size: cover;
+   background-position: center;
+}
+#heroright p:nth-child(3){
+   margin-bottom: 50px;
 }
