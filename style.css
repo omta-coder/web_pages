@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
@@ -10,44 +11,102 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #dadada;
+    display: flex;
     position: relative;
+    overflow: hidden;
 }
 #nav{
-    height: 100%;
-    width: 4%;
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
     position: absolute;
-    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-    padding: 50px 0;
+    padding: 0 50px;
+    z-index: 99;
+}
+#nav img{
+    height: 80px;
 }
 #nav-prt2{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
-#nav i{
-    font-size: 24px;
+#nav-prt2 h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #003D38;
 }
-#parent{
-    height: 80%;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+#nav-prt3 i{
+    font-size: 22px;
+    color: #fff;
 }
-#center-image{
-    position: absolute;
+#left{
     height: 100%;
-    width: 0%;
-    background-color: #000;
+    width: 70%;
+    position: relative;
+    background-color: #C2CBC8;
+    padding-top: 150px;
+    padding-left: 50px;
+    color: #003D38;
 }
-#center-image img{
+#left h1{
+    font-family: roboto;
+    font-size: 130px;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+#left p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+#left span{
+    font-size: 25px;
+    color: #fff;
+}
+#left #text{
+    height: 140px;
+    width: 200px;
+    transform: rotate(-15deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+#text h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+#left button{
+    padding: 10px 30px;
+    background-color: #003D38;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+#right{
+    height: 100%;
+    width: 30%;
+    background-color: #003D38;
+}
+#right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#box{
+    height: 480px;
+    width: 300px;
+   
+    position: absolute;
+    top: 15%;
+    left: 85%;
+}
+#box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
