@@ -9,85 +9,111 @@ html,body{
     width: 100%;
 }
 #main{
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-#left{
-    height: 98%;
-    width: 50%;
-    overflow-x: hidden;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    overflow-y: auto;
-}
-#left::-webkit-scrollbar{
-    display: none;
-}
-#left img{
-    /* height: 100%; */
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-#right{
-    height: 100%;
-    width: 50%;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
 }
 #nav{
-    height: 60px;
-    width: 100%;
+    height: 10vh;
+    width: 100vw;
+    background-color: #7A0000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-}
-#nav-prt2{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-#center{
-    height: calc(100% - 60px);
-    width: 100%;
-    position: relative;
-    white-space: nowrap;
-    overflow-x: auto;
-    padding-top: 70px;
-    padding-left: 20px;
-}
-#center::-webkit-scrollbar{
-    display: none;
-}
-#box{
-    height: 450px;
-    width: 320px;
-
-    border-radius: 30px;
-    display: inline-block;
-    margin-right: 10px;
-    position: relative;
-    overflow: hidden;
-    
-}
-#box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-#text{
-    height: 50px;
-    width: 100%;
-    position: absolute;
-    bottom: -13%;
-    transition: all ease 0.5s;
-}
-#text h3{
-    text-align: center;
-    padding-top: 10px;
+    padding: 0 30px;
     color: #fff;
 }
-#box:hover #text{
-    bottom: 0;
+#nav-prt2 img{
+    height: 9vh;
 }
+#nav-prt1{
+    display: flex;
+    gap: 30px;
+}
+#nav-prt3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#nav-prt3 i{
+    font-size: 20px;
+}
+#parent{
+    height: calc(100% - 10vh);
+    width: 100vw;
+    background: radial-gradient(#851725,#700e1d,#630c19,#570000);
+    color: #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+#parent #left{
+    height: 100%;
+    width: 50vw;
+    position: relative;
+}
+#left h1{
+    font-size: 10vh;
+    line-height: 10vh;
+    font-family: 'AR One Sans', sans-serif;
+    padding-top: 6vw;
+    padding-left: 6vw;
+}
+#left span{
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+     color: transparent;
+}
+#left p{
+    padding-top: 1.7vw;
+    padding-left: 6vw;
+    font-size: 19px;
+    font-family: 'AR One Sans', sans-serif;
+}
+#left #oval{
+    height: 200px;
+    width: 300px;
+    background-color: transparent;
+    position: absolute;
+    left: 69%;
+    bottom: 3%;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+#oval h2{
+    font-size: 45px;
+}
+#parent #right{
+    height: 100%;
+    width: 50vw;
+    position: relative;
+}
+#right img{
+    height: 700px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotate(20deg);
+}
+#right img{
+    transition: margin 0.8s ease;
+}
+#right img:hover{
+    margin-top: -50px;
+}
+.cursor{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    position: absolute;
+    border-radius: 50%;
+}
+
