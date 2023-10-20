@@ -3,47 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&display=swap" rel="stylesheet">
-
+    <title>Food</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWUcnRF6cNWqTgd4ORWaCulEnW35DYScUTA&usqp=CAU" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <div id="main">
         <div id="nav">
-            
-            <div id="nav-prt1">
-                <h4>PRODUCTS</h4>
-                <h4>HERITAGE</h4>
-            </div>
+            <!-- <img src="data:image/png;base64,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" alt=""> -->
             <div id="nav-prt2">
-                <img src="https://logos-world.net/wp-content/uploads/2021/08/Dr-Pepper-Logo.png" alt="">
+                <h4>Home</h4>
+                <h4>About us</h4>
+                <h4>Services</h4>
+                <h4>Delivery</h4>
+                <h4>Contact us</h4>
             </div>
             <div id="nav-prt3">
-                <i class="ri-menu-line"></i>
-                <i class="ri-search-line"></i>
+                <i class="ri-shopping-cart-2-line"></i>
             </div>
         </div>
-        <div id="parent">
-            <div id="left">
-                <h1>IF SOMETHNG <br> IS WORTH DOING,<br> IT'S WORTH <br> <span>OVERDOING</span></h1>
-                <p>THE ORIGINAL DR PEPPER HAS ALWAYS <br> BEEN EXTRA.</p>
-                <div id="oval">
-                    <h2>SIP SOME <br>FLAVOUR</h2>
-                </div>
-            </div>
-            <div id="right">
-                <img src="./pepper.png" alt="">
-            </div>
+        <div id="center">
+            <h1><span>YUMMY</span><br>BREAKFAST!</h1>
+            <p>ORDER BREAKAST THE EASY WAY YUMMY BREAKFAST(25% OFFER)</p>
+            <button>OBDER NOW</button>
+            <img src="./food.png" alt="">
         </div>
-        <div class="cursor"></div>
+        <div id="box"></div>
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
