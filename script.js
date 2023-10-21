@@ -1,29 +1,20 @@
-var main = document.querySelector("#main")
-var img = document.querySelector("#main img")
-
-main.addEventListener("mouseenter",function(){
-    img.style.height=`500px`
-    img.style.width=`600px`
-})
-main.addEventListener("mouseleave",function(){
-    img.style.height=`450px`
-})
-
 var tl = gsap.timeline()
-tl.from("#nav h4,#nav i",{
-    y:-100,
-    scale:0,
-    duration:1,
-    stagger:.8
-})
-tl.from("h1,p,button",{
-    x:-50,
+tl.from("#nav img,#nav h4",{
+    y:-50,
     opacity:0,
-    duration:.6,
-    stagger:.8
+    
 })
-tl.from("#main img",{
-    x:50,
-    scale:0,
-    duration:.6,
+tl.from("#left h1,#left p",{
+    x:-100,
+    opacity:0,
+    stagger:.5
+})
+tl.from("#photo img",{
+    x:100,
+    scale:0
+})
+tl.from("#footer,#box",{
+    y:100,
+    opacity:0,
+    stagger:.5
 })
