@@ -11,89 +11,71 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    position: relative;
+    background-color: pink;
     display: flex;
-    overflow: hidden;
+    position: relative;
 }
 #left{
     height: 100%;
-    width: 80%;
-    background-color: #035E3F;
-    position: relative;
-    color: #fff;
+    width: 50%;
+    background-color: palevioletred;
+}
+#left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#right{
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
 }
 #nav{
     height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
-    padding-left: 30px;
-    gap: 30px;
+    justify-content: space-between;
+    padding: 0 30px;
 }
-#nav h4{
-    font-size: 15px;
-}
-#nav img{
-    height: 60px;
-    margin-right: 70px;
-}
-#left h1{
-    font-size: 60px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    line-height: 55px;
-    margin-left: 40px;
-}
-#left span{
-    margin-left: 25px;
-}
-#left p{
-    font-size: 13px;
-    margin-left: 40px;
-}
-#photo img{
-    height: 550px;
-    position: absolute;
-    left: 64%;
-    top: 2%;
-}
-#footer{
-    height: 300px;
-    width: 800px;
-    background-color:#fff;
-    position: absolute;
-    bottom: 0;
-    border-top-right-radius: 50px;
+#nav-prt1{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
-#box{
-    height: 300px;
-    width: 220px;
-    position: relative;
+#nav-prt1 h4{
+    font-size: 15px;
+    opacity: .5;
 }
-#box img{
-    height: 250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    object-fit: cover;
-    z-index: 99;
+#nav-prt2 i{
+    font-size: 20px;
+    opacity: .5;
 }
-#bottom{
-    position: absolute;
-    bottom: 0;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    height: 80px;
-    width: 100%;
-    background-color: #035E3F;
+#text{
+    margin-top: 70px;
+    margin-left: 150px;
 }
-#right{
-    height: 100%;
-    width: 20%;
-    background-color: #DFB582;
+#right h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#right p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #C8828A;
+    border: none;
+    color: #fff;
+}
+h1{
+    font-size: 153px;
+   position: absolute;
+   left: 27%;
+   top: 60%;
+   color: #fff;
+}
+span{
+    color: #CF6974;
 }
