@@ -1,8 +1,8 @@
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: gilroy;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
 }
 html,body{
     height: 100%;
@@ -11,71 +11,61 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    position: relative;
-    padding-top: 20px;
 }
-#nav{
-    height: 60px;
-    width: 70%;
-    margin-left: 200px;
-    background-color: #fff;
-    box-shadow: 0 0 10px pink;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-}
-#nav-prt1 h2{
-    font-size:25px ;
-}
-#nav-prt1 h2 span{
-    color: red;
-}
-#nav-prt2{
-    display: flex;
-    align-items: center;
-    gap: 30px; 
-}
-#nav-prt2 h4{
-    font-size: 12px;
-}
-#nav-prt2 h4 span{
-    color: red;
-}
-#center{
-    height: calc(100% - 60px);
+#page1{
+    height: 100%;
     width: 100%;
+    background-color: #dadada;
     display: flex;
 }
 #left{
     height: 100%;
     width: 50%;
+    background-color: #052A31;
+    color: #fff;
+}
+#nav{
+    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#nav h4{
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#center{
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding-top: 120px;
+    padding: 20px;
 }
-#left h3{
-    font-size: 20px;
+#center h1{
+    text-align: center;
+    font-size: 65px;
+    line-height: 67px;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
-#left h1{
-    font-size: 70px;
-    line-height: 70px;
-    margin-bottom: 20px;
+#center p{
+    padding-left: 80px;
+    padding-right: 70px;
+    font-size: 13px;
+    margin-bottom: 50px;
 }
-#left p{
-    font-size: 15px;
-    margin-bottom: 30px;
-}
-button{
+#center button{
     padding: 10px 20px;
-    background-color: red;
-    color: #fff;
+    background-color: #FFA30A;
     border: none;
-    font-weight: 600;
-}
-#left h1 span{
-    color: red;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
 }
 #right{
     height: 100%;
@@ -84,5 +74,82 @@ button{
 }
 #right img{
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
+#page2{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(https://images.lifestyleasia.com/wp-content/uploads/sites/7/2021/11/19152709/shutterstock_1902416098-min-1351x900.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#page2 h1{
+    font-size: 25vw;
+    white-space: nowrap;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: 99;
+    padding-top: 80px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/28/b5/b0/a1/main-pool.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#page3 img{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+    overflow: hidden;
+}
+#page4{
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+   padding-top: 40px;
+   padding-left: 20px;
+}
+#page4::-webkit-scrollbar{
+    display: none;
+}
+#box{
+    height: 550px;
+    width: 370px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50px;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+    overflow: hidden;
+}
+#box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@keyframes scroll {
+    0%{
+     transform: translateX(calc(-100% - 550px));
+    }
+    100%{
+     transform: translateX(0);
+    }
+ }
