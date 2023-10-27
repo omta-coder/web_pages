@@ -14,70 +14,64 @@ html,body{
     background-color: #000;
 }
 #nav{
-    height: 80px;
+    height: 60px;
     width: 100%;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 40px;
     color: #fff;
 }
-#nav-prt1{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-#nav-prt1 h4{
-    font-size: 13px;
+#nav h3{
+    font-size: 19px;
+    font-weight: 600;
 }
 #nav-prt2{
     display: flex;
     align-items: center;
-    gap: 30px;
-}
-#nav-prt2 h4{
-    font-size: 15px;
+    gap: 30px;  
 }
 #center{
-    height: calc(100% - 80px);
+    height: calc(100% - 60px);
     width: 100%;
     display: flex;
 }
 #left{
     height: 100%;
-    width: 35%;
-    overflow: hidden;
-}
-#left img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-#middle{
-    height: 100%;
-    width: 30%;
-    color: #fff;
+    width: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-left: 20px;
+    color: #fff;
 }
-#middle h1{
-    font-size: 150px;
-    line-height: 130px;
-    text-align: center;
+#left h1{
+    font-size: 90px;
 }
-#middle h5{
-    font-size: 23px;
-    letter-spacing: 4px;
-    margin-left: 60px;
+span{
+    color: #46B09C;
+}
+#left p{
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+button{
+    padding: 10px 30px;
+    background-color: #46B09C;
+    color: #fff;
+    border: none;
 }
 #right{
     height: 100%;
-    width: 35%;
-    overflow: hidden;
+    width: 50%;
+    background-color: rgb(62, 241, 247);
+    border-radius: 50%;
+    overflow-y: hidden;
 }
 #right img{
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
