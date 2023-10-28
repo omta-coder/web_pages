@@ -11,67 +11,68 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #000;
 }
 #nav{
-    height: 60px;
+    height: 80px;
     width: 100%;
-    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
-    color: #fff;
+    padding: 0 50px;
 }
-#nav h3{
-    font-size: 19px;
-    font-weight: 600;
+#nav h4{
+    font-family: serif;
+    font-size: 18px;
 }
-#nav-prt2{
+#prt2{
     display: flex;
     align-items: center;
-    gap: 30px;  
+    gap: 60px;
+}
+#prt2 h5{
+    font-size: 15px;
+}
+#prt3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#prt3 i{
+    font-size: 19px;
 }
 #center{
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
     width: 100%;
     display: flex;
+    background-color: #E2D2C2;
 }
 #left{
     height: 100%;
     width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
+    padding-top: 80px;
+    padding-left: 60px;
 }
 #left h1{
+    font-family: serif;
     font-size: 90px;
-}
-span{
-    color: #46B09C;
+    margin-bottom: 20px;
 }
 #left p{
-    font-size: 13px;
+    font-size: 17px;
     margin-bottom: 30px;
-    line-height: 20px;
 }
 button{
     padding: 10px 30px;
-    background-color: #46B09C;
-    color: #fff;
     border: none;
+    background-color: #2C2E2D;
+    color: #fff;
+    border-radius: 10px;
 }
 #right{
     height: 100%;
     width: 50%;
-    background-color: rgb(62, 241, 247);
-    border-radius: 50%;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 #right img{
     height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
