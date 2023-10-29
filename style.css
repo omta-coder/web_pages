@@ -11,68 +11,128 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 #nav{
-    height: 80px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 80px;
+}
+#nav h3{
+    font-size: 19px;
 }
 #nav h4{
-    font-family: serif;
-    font-size: 18px;
+    font-size: 14px;
 }
-#prt2{
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-#prt2 h5{
-    font-size: 15px;
-}
-#prt3{
+#nav-prt2{
     display: flex;
     align-items: center;
     gap: 30px;
 }
-#prt3 i{
-    font-size: 19px;
+span{
+    color: tomato;
 }
 #center{
-    height: calc(100% - 80px);
+    height: calc(100% - 60px);
     width: 100%;
     display: flex;
-    background-color: #E2D2C2;
 }
 #left{
     height: 100%;
     width: 50%;
+    position: relative;
     padding-top: 80px;
-    padding-left: 60px;
+    padding-left: 170px;
 }
 #left h1{
-    font-family: serif;
-    font-size: 90px;
-    margin-bottom: 20px;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 30px;
+    transition: all ease 0.5s;
+}
+#left h1:hover{
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
 }
 #left p{
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 button{
-    padding: 10px 30px;
+    padding: 14px 40px;
+    background-color: #FBAB92;
     border: none;
-    background-color: #2C2E2D;
     color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
     border-radius: 10px;
+    transition: all ease 0.5s;
+}
+button:hover{
+    box-shadow: 7px 7px 0 #000;
+    background-color: #7C98A4;
+}
+#vertical{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 14%;
+    left: 7%;
+    transform-origin: 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+#ver1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#ver1 h5{
+    font-size: 18px;
+}
+#ver2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 #right{
     height: 100%;
     width: 50%;
-    overflow: hidden;
+    display: flex;
+    position: relative;
 }
-#right img{
+#box1{
+    height: 80%;
+    width: 40%;
+    background-color: #7C98A4;
+    position: absolute;
+    bottom: 0;
+    left: 10.2%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#box2{
+    height: 80%;
+    width: 40%;
+    background-color: #FBAB92;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.overlay{
     height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.overlay img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
