@@ -11,85 +11,74 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    display: flex;
+    position: relative;
+    background-color: #1E5149;
 }
-#left{
-    height: 100%;
-    width: 50%;
-}
-#left h1{
-    font-size: 70px;
-    line-height: 70px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-}
-#left p{
-    color: #FE5946;
-    margin-bottom: 20px;
-    margin-left: 50px;
-}
-button{
-    padding: 10px 30px;
-    border-radius: 50px;
-    background-color: #FE5946;
-    border: none;
-    color: #fff;
-    margin-left: 50px;
-}
-#left-nav{
-    height: 50px;
+#nav{
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
-    margin-bottom: 100px;
-}
-#left-nav h4{
-    font-weight: 500;
+    padding: 0 50px;
+    border-bottom: 1px solid silver;
+    color: #fff;
 }
 span{
-    font-weight: 600;
+    color: salmon;
 }
 #prt2{
     display: flex;
     align-items: center;
     gap: 30px;
 }
-#prt2 h5{
-    font-weight: 600;
-}
-#right{
-    height: 10op;
-    width: 50%;
-    background-color: #FE5946;
-    position: relative;
-}
-#right-nav{
-    height: 50px;
+#page{
+    height: calc(100% - 60px);
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 30px;
-    padding-right: 40px;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 50px;
     color: #fff;
 }
-#right-nav i{
-    font-size: 22px;
+#left h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+#left p{
+    margin-bottom: 30px;
+}
+#left button{
+    padding: 10px 30px;
+    border: 1px solid salmon;
+    border-radius: 10px;
+}
+#btn1{
+    background-color: salmon;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#btn2{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+#right{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #right img{
-    height: 80%;
-    margin-left: -40%;
-    margin-top: 5%;
-}
-#right h1{
-    font-size: 100px;
-    position: absolute;
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 2px;
-    color: transparent;
-    right: 0;
-    rotate: 50deg;
-    top: 35%;
+    height: 100%;
 }
