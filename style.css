@@ -11,35 +11,37 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
+    background-color: #E2BC8F;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV3yzj44yjm0_qfjOkNJDqcJg2u08b40G5wg&usqp=CAU);
+    background-size: cover;
+    overflow: hidden;
 }
 #nav{
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
+    justify-content: space-evenly;
 }
-span{
-    color: #F07599;
-    font-size: 13px;
+#nav h2{
+    font-family: serif;
+    font-size: 22px;
+    position: relative;
 }
-h3{
-    font-size: 14px;
-    line-height: 14px;
+h2::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #000;
+    transition: all ease 1s;
 }
-#prt2{
-    display: flex;
-    align-items: center;
-    gap: 40px; 
+h2:hover::after{
+    width: 100%;
 }
-button{
-    padding: 10px 20px;
-    border: 1px solid #F07599;
-    color: #F07599;
-    letter-spacing: 1px;
-}
-#page{
+#center{
     height: calc(100% - 50px);
     width: 100%;
     display: flex;
@@ -51,38 +53,52 @@ button{
     align-items: center;
     justify-content: center;
 }
-h1{
-    position: absolute;
-    top: 20%;
-    z-index: 999;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 100px;
-}
-#line{
-    height: 8px;
-    width: 30px;
-    background-color: #F07599;
+#left h1{
+    font-size: 80px;
+    line-height: 80px;
     margin-bottom: 20px;
+    filter: drop-shadow(5px 5px 0 #666);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
-#left button{
-    background-color: #F07599;
+span{
+    background-image: url(https://images.unsplash.com/photo-1598121496628-9d8b7578e290?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBlcmZ1bWUlMjB3aXRoJTIwZnJhZ3JhbmNlfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+}
+#left p{
+    font-size: 18px;
+    line-height: 25px;
+}
+button{
+    padding: 10px 30px;
+    border: none;
+    background-color: #333;
+    border-radius: 50px;
     color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-}
-#left h3{
     margin-top: 30px;
-    margin-bottom: 20px;
+    transition: all ease 0.5s;
+}
+button:hover{
+    box-shadow: 5px 5px 0 #000;
 }
 #right{
     height: 100%;
     width: 50%;
-    background-color: #F07599;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #right img{
-    height: 100%;
+/*  height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; */
+    transition: all ease 0.5s;
 }
+#right:hover img{
+    scale: 1.5;
+}
+
