@@ -11,35 +11,22 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #E2BC8F;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV3yzj44yjm0_qfjOkNJDqcJg2u08b40G5wg&usqp=CAU);
-    background-size: cover;
-    overflow: hidden;
 }
 #nav{
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 50px;
 }
-#nav h2{
-    font-family: serif;
-    font-size: 22px;
-    position: relative;
+#prt2{
+    display: flex;
+    align-items: center;
+    gap: 30px; 
 }
-h2::after{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    height: 3px;
-    width: 0%;
-    background-color: #000;
-    transition: all ease 1s;
-}
-h2:hover::after{
-    width: 100%;
+#prt2 h5{
+    opacity: .6;
 }
 #center{
     height: calc(100% - 50px);
@@ -55,50 +42,38 @@ h2:hover::after{
 }
 #left h1{
     font-size: 80px;
-    line-height: 80px;
+    line-height: 90px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    filter: drop-shadow(5px 5px 0 #666);
-    background-clip: text;
-    -webkit-background-clip: text;
 }
-span{
-    background-image: url(https://images.unsplash.com/photo-1598121496628-9d8b7578e290?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBlcmZ1bWUlMjB3aXRoJTIwZnJhZ3JhbmNlfGVufDB8fDB8fHww);
-    background-size: cover;
-    background-position: center;
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 1px;
-}
-#left p{
-    font-size: 18px;
-    line-height: 25px;
+#left h3{
+    color: #FA5963;
 }
 button{
-    padding: 10px 30px;
-    border: none;
-    background-color: #333;
-    border-radius: 50px;
-    color: #fff;
+    padding: 10px 20px;
     margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+}
+#btn1{
+    background-color: #FA5963;
+    color: #fff;
     transition: all ease 0.5s;
 }
-button:hover{
-    box-shadow: 5px 5px 0 #000;
+#btn1:hover{
+    box-shadow: 5px 5px 0 #f02d3a;
+}
+#btn2{
+    background-color: #0B2E4E;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+#btn2:hover{
+    box-shadow: 5px 5px 0 #032544;
 }
 #right{
     height: 100%;
     width: 50%;
-    /* overflow: hidden; */
+    background-image: url(https://assets.stickpng.com/images/580b585b2edbce24c47b2b98.png);
+    background-repeat: no-repeat;
 }
-#right img{
-/*  height: 100%;
-    width: 100%;
-    object-fit: cover; */
-    transition: all ease 0.5s;
-}
-#right:hover img{
-    scale: 1.5;
-}
-
