@@ -11,8 +11,7 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-image: url(https://img.freepik.com/premium-photo/bottle-women-s-perfume-pink-background-with-tulip-top-view-concept-perfumery-beauty_425936-4300.jpg?w=360);
-    background-size: cover;
+    background-color: #EEB4C7;
 }
 #nav{
     height: 50px;
@@ -22,34 +21,27 @@ html,body{
     justify-content: space-between;
     padding: 0 50px;
 }
-#nav h4{
-    font-size: 18px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYA1CCPz1w1LiPjfrb4UyV1YLKFF3V_-CNQ&usqp=CAU);
+#prt2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#prt2 h4{
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    border: none;
+    background-color: #DA3B85;
+    transition: all ease 1s;
+}
+#prt2 h4:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVO98loxqsYwwUwq6G-5KG29TzAIO6ORjq_vV_UC-cKCdhl3qFyNEyqZZUqh1e7TYJ4v8&usqp=CAU);
     background-size: cover;
+    background-position: center;
     background-position: center;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-}
-#prt2{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-#prt2 h5{
-    opacity: .6;
-}
-#prt3{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-#prt3 i{
-    font-size: 20px;
-    padding: 4px 5px;
-    background-color: pink;
-    border: 1px solid #666;
-    border-radius: 50px;
 }
 #center{
     height: calc(100% - 50px);
@@ -58,56 +50,42 @@ html,body{
 }
 #left{
     height: 100%;
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #left h1{
-    font-family: 'Noto Serif', serif;
-    font-size: 140px;
-    line-height: 140px;
+    font-size: 100px;
+    line-height: 100px;
     margin-bottom: 30px;
-    margin-top: 20px;
 }
 span{
-    font-family: montserrat;
-    background-image: url(https://e7.pngegg.com/pngimages/755/273/png-clipart-assorted-brand-fragrance-bottle-lot-chanel-perfume-eau-de-toilette-parfumerie-dolce-gabbana-parfume-distilled-beverage-cosmetics.png);
+    background-image: url(https://thumbs.dreamstime.com/b/colorful-acrylic-ink-water-isolated-abstract-background-color-explosion-liquid-cloud-motion-91873824.jpg);
     background-size: cover;
     background-position: center;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 1px;
 }
 button{
-    padding: 10px 20px;
-    background-color: #f7858b;
-    border: none;
+    background-color: #DA3B85;
     color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 30px;
+    transition: all ease 0.5s;
+}
+button:hover{
+    box-shadow: 6px 6px 0 #d30b68;
 }
 #right{
     height: 100%;
-    width: 40%;
-    position: relative;
-    overflow-y: auto;
+    width: 50%;
+   overflow: hidden;
 }
-#right::-webkit-scrollbar{
-    display: none;
-}
-#box{
-    height: 250px;
-    width: 250px;
-    background-color: palegreen;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-#box img{
+#right img{
     height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width: 98%;
 }
