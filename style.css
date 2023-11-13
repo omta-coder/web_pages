@@ -11,9 +11,7 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-woman-perfume-literary-flower-pink-banner-image_181283.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: #F9C5BA;
 }
 #nav{
     height: 50px;
@@ -21,17 +19,27 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 80px;
 }
-#nav h3{
-    letter-spacing: 2px;
+#nav h2{
+    font-size: 34px;
+    background-image: url(https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5zdGFncmFtfGVufDB8fDB8fHww);
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 #prt2{
     display: flex;
     align-items: center;
     gap: 40px;
 }
-#center{
+#prt3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#parent{
     height: calc(100% - 50px);
     width: 100%;
     display: flex;
@@ -44,46 +52,31 @@ html,body{
     justify-content: center;
 }
 #left h1{
-    font-size: 120px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9VvJPBDUWXv4TMu_wjBJXHv4Fte2A6N2LVQ&usqp=CAU);
-    /* background-size: cover;
-    background-position: center; */
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-stroke-color: #666;
-    -webkit-text-stroke-width: 1px;
-    margin-bottom: 30px;
-}
-#left h2{
-    font-size: 50px;
-    background-clip: text;
-    -webkit-background-clip: text;
-    filter: drop-shadow(6px 6px 0 pink);
+    font-family: averta;
+    font-size: 60px;
+    line-height: 65px;
     margin-bottom: 20px;
-}
-#left p{
-    margin-bottom: 40px;
+    filter: drop-shadow(6px 6px 0 #3333336e);
 }
 button{
-    padding: 10px 20px;
-    border: 1px solid #333;
+    padding: 12px 30px;
     border-radius: 50px;
-    background-color: pink;
+    background-color: #C268D2;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
     transition: all ease 0.5s;
 }
 button:hover{
-    box-shadow: 6px 6px 0 rgb(228, 74, 100);
+    box-shadow: 5px 5px 0 #3b0446 ;
 }
 #right{
     height: 100%;
     width: 50%;
-    display: flex;
-    align-items: end;
+    overflow: hidden;
 }
-#right i{
-    margin-bottom: 40px;
-    font-size: 22px;
-    margin-right: 20px;
-    color: rgb(160, 71, 86);
+#right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
