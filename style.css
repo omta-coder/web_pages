@@ -11,72 +11,80 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #F9C5BA;
+    background-color: red;
+    display: flex;
+    position: relative;
+}
+#left{
+    height: 100%;
+    width: 70%;
+    background-color: #fff;
 }
 #nav{
-    height: 50px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 30px;
 }
-#nav h2{
-    font-size: 34px;
-    background-image: url(https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5zdGFncmFtfGVufDB8fDB8fHww);
-    background-size: cover;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+#nav img{
+    height: 70px;
 }
-#prt2{
+#nav-prt2{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 100px;
 }
-#prt3{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#nav-prt2 h4{
+    font-family: montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    color: #902305;
 }
-#parent{
-    height: calc(100% - 50px);
+#center{
+    padding-left: 100px;
+    padding-top: 100px;
+}
+#center h5{
+    font-size: 19px;
+}
+#center h1{
+    font-size: 100px;
+    color: #337080;
+}
+#center p{
+    color: #7EA9B3;
+    font-size: 17px;
+    line-height: 25px;
+}
+#footer{
+    height: 50px;
     width: 100%;
-    display: flex;
-}
-#left{
-    height: 100%;
-    width: 50%;
+    margin-top: 150px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
-#left h1{
-    font-family: averta;
-    font-size: 60px;
-    line-height: 65px;
-    margin-bottom: 20px;
-    filter: drop-shadow(6px 6px 0 #3333336e);
+#footer h6{
+    color: #902305;
+    font-size: 14px;
 }
-button{
-    padding: 12px 30px;
-    border-radius: 50px;
-    background-color: #C268D2;
-    color: #fff;
-    border: none;
-    margin-top: 30px;
-    transition: all ease 0.5s;
+#box{
+    position: absolute;
+    height: 350px;
+    width: 450px;
+    background-color: #CDDDDC;
+    right: 45%;
+    top: 17%;
 }
-button:hover{
-    box-shadow: 5px 5px 0 #3b0446 ;
+#box img{
+    height: 100%;
+    width: 100%;
 }
 #right{
     height: 100%;
-    width: 50%;
-    overflow: hidden;
-}
-#right img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width: 30%;
+    background-color: #337080;
+    position: relative;
 }
