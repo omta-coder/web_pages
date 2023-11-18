@@ -11,56 +11,86 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #CFBDBD;
-    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+#nav{
+    height: 60px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 50px;
 }
-#page{
-    height: 80%;
-    width: 90%;
-    border: 2px solid #fff;
+#prt2{
     display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#text{
+    height: calc(100% - 60px);
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+#text h6{
+    color: #E09443;
+    font-size: 17px;
+}
+#text h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-family: serif;
+    margin-bottom: 30px;
+    transition: all ease 0.5s;
+}
+#text h1:hover{
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+}
+#text p{
+    margin-bottom: 30px;
+}
+#text button{
+    padding: 12px 30px;
+    background-color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #118379;
+    color: #fff;
+    border: none;
+    transition: all ease 0.5s;
+}
+button:hover{
+    box-shadow: 5px 5px 0 #000;
 }
 #left{
     height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#left h1{
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-span{
-    font-size: 150px;
-    line-height: 120px;
-}
-button{
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-}
-#btn1{
-    background-color: black;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-#btn2{
-    background-color: #BA8365;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
+    width: 70%;
 }
 #right{
     height: 100%;
-    width: 50%;
+    width: 30%;
+    background-color: #118379;
+    position: relative;
 }
-#right img{
+#box{
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+    position: relative;
+    top: 14%;
+    left: -50%;
+    overflow: hidden;
+}
+#box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
+    transition: all ease 0.5s;
+}
+#box:hover img{
+    scale: 1.5;
 }
