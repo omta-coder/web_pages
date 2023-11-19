@@ -11,8 +11,7 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    display: flex;
-    overflow: hidden;
+    background-color: #ECD9C6;
 }
 #nav{
     height: 60px;
@@ -20,68 +19,83 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 100px;
+}
+#nav h2{
+    font-size: 28px;
+    background: linear-gradient(to right,royalblue,rgb(216, 100, 120));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#nav h4{
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 10px 20px;
 }
 #prt2{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
-#text{
+#prt2 h5{
+    font-size: 14px;
+}
+#center{
     height: calc(100% - 60px);
     width: 100%;
-    padding-top: 80px;
-    padding-left: 50px;
-}
-#text h6{
-    color: #E09443;
-    font-size: 17px;
-}
-#text h1{
-    font-size: 70px;
-    line-height: 70px;
-    font-family: serif;
-    margin-bottom: 30px;
-    transition: all ease 0.5s;
-}
-#text h1:hover{
-    -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 2px;
-    color: transparent;
-}
-#text p{
-    margin-bottom: 30px;
-}
-#text button{
-    padding: 12px 30px;
-    background-color: transparent;
-    font-weight: 600;
-    letter-spacing: 1px;
-    background-color: #118379;
-    color: #fff;
-    border: none;
-    transition: all ease 0.5s;
-}
-button:hover{
-    box-shadow: 5px 5px 0 #000;
+    display: flex;
 }
 #left{
     height: 100%;
-    width: 70%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#txt h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    line-height: 90px;
+    margin-bottom: 20px;
+}
+#txt h1 span{
+    font-family: 'Playfair Display', serif;
+    background-image: url(https://img.freepik.com/premium-photo/colorful-painting-with-gold-blue-background_873925-37616.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#txt p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+button{
+    padding: 13px 30px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all ease 0.5s;
+}
+button:hover{
+    box-shadow: 5px 5px 0 crimson;
 }
 #right{
     height: 100%;
-    width: 30%;
-    background-color: #118379;
-    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
 #box{
-    height: 500px;
-    width: 500px;
-    background-color: yellow;
-    position: relative;
-    top: 14%;
-    left: -50%;
+    height: 550px;
+    width: 590px;
+    border-bottom-left-radius: 20%;
     overflow: hidden;
 }
 #box img{
@@ -92,5 +106,5 @@ button:hover{
     transition: all ease 0.5s;
 }
 #box:hover img{
-    scale: 1.5;
+    scale: 1.3;
 }
