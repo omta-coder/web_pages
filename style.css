@@ -11,108 +11,102 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 #nav{
     height: 50px;
     width: 100%;
+    background-color: #FFD602;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
 }
 #prt1{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    width: 50%;
+    background-color: #004743;
+    padding: 14px 20px;
+    color: #fff;
 }
-#prt1 img{
-    height: 30px;
+#prt1 h3{
+   color: #FFD602;
 }
 #prt2{
     display: flex;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
 }
-#prt2 h5{
-    opacity: .4;
-}
-input{
-    border-radius: 50px;
-    padding: 5px 20px;
-    border: 1px solid #000;
+#prt2 i{
+    font-size: 22px;
 }
 #center{
     height: calc(100% - 50px);
     width: 100%;
     display: flex;
-    background-image: url(https://wallpaper-house.com/data/out/2/wallpaper2you_23450.jpg);
-    background-size: cover;
 }
 #left{
     height: 100%;
     width: 50%;
+    background-color: #004743;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #left h1{
-    font-family: 'Noto Serif', serif;
-    font-size: 150px;
-    line-height: 150px;
-    margin-bottom: 20px;
-    columns: #361502;
-}
-button{
-    margin-top: 20px;
-    padding: 8px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border: none;
-}
-#btn1{
-    background-color: #361502;
-    color: #fff;
-}
-#btn2{
-    border: 2px solid #361502;
-    color: #361502;
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 140px;
+    line-height: 140px;
 }
 span{
-    font-family: 'Noto Serif', serif;
-    background-image: url(https://images.unsplash.com/photo-1559759708-d6e99b50f0e9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5kaWFuJTIwZmxvd2VyfGVufDB8fDB8fHww);
-    background-size: cover;
-    background-position: center;
+    font-family: roboto;
+    font-size: 200px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
     color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    opacity: .2;
 }
 #right{
     height: 100%;
     width: 50%;
+    background-color: #FFD602;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+#right h1{
+    font-family: 'Lobster', sans-serif;
+    font-size: 170px;
+    line-height: 170px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    opacity: .3;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #box{
-    height: 400px;
-    width: 600px;
-    border-radius: 300px;
-    background-color: red;
+    height: 630px;
+    width: 500px;
+    /* background-color: darkcyan; */
     overflow: hidden;
-    background: linear-gradient(red,blue,rgb(211, 18, 50),rgb(5, 54, 5),yellow,red);
-    padding: 3px;
 }
 #box img{
-    border-radius: 300px;
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: all ease 0.5s;
 }
 #box:hover img{
-    scale: 1.4;
-}
-#right h5{
-    color: red;
-    margin-top: 50px;
+    scale: 1.2;
 }
