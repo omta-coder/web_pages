@@ -11,102 +11,59 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    position: relative;
 }
 #nav{
     height: 50px;
     width: 100%;
-    background-color: #FFD602;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 60px;
 }
-#prt1{
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    width: 50%;
-    background-color: #004743;
-    padding: 14px 20px;
-    color: #fff;
-}
-#prt1 h3{
-   color: #FFD602;
+span{
+    color: #FB83AA;
 }
 #prt2{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
-}
-#prt2 i{
-    font-size: 22px;
 }
 #center{
     height: calc(100% - 50px);
     width: 100%;
     display: flex;
 }
+h1{
+    font-size: 90px;
+    line-height: 90px;
+    margin-bottom: 20px;
+}
+button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ee5c8a;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
 #left{
     height: 100%;
     width: 50%;
-    background-color: #004743;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#left h1{
-    font-family: 'Glass Antiqua', cursive;
-    font-size: 140px;
-    line-height: 140px;
-}
-span{
-    font-family: roboto;
-    font-size: 200px;
-    -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 2px;
-    color: transparent;
-    opacity: .2;
 }
 #right{
     height: 100%;
     width: 50%;
-    background-color: #FFD602;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   overflow: hidden;
 }
-#right h1{
-    font-family: 'Lobster', sans-serif;
-    font-size: 170px;
-    line-height: 170px;
-    -webkit-text-stroke-color: #fff;
-    -webkit-text-stroke-width: 1px;
-    color: transparent;
-    opacity: .3;
-}
-#overlay{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#box{
-    height: 630px;
-    width: 500px;
-    /* background-color: darkcyan; */
-    overflow: hidden;
-}
-#box img{
+#right img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: all ease 0.5s;
-}
-#box:hover img{
-    scale: 1.2;
 }
