@@ -13,57 +13,98 @@ html,body{
     width: 100%;
 }
 #nav{
-    height: 50px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 50px;
+    border: 1px solid #000;
 }
-span{
-    color: #FB83AA;
+#prt1 h4{
+    font-size: 19px;
+    color: crimson;
 }
 #prt2{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 30px;
 }
-#center{
-    height: calc(100% - 50px);
-    width: 100%;
-    display: flex;
+#prt2 h5{
+    color: #01998D;
 }
-h1{
-    font-size: 90px;
-    line-height: 90px;
-    margin-bottom: 20px;
+#prt3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 button{
     padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 50px;
-    border: none;
-    background-color: #ee5c8a;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 12px;
+    border-radius: 10px;
+    color: #01998D;
+    border: 1px solid #01998D;
+}
+#text{
+    height: calc(100% - 60px);
+    width: 100%;
+    display: flex;
 }
 #left{
     height: 100%;
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+#overlay{
+    position: absolute;
+}
+#left h1{
+    font-size: 80px;
+    line-height: 80px;
+    color: crimson;
+    margin-bottom: 20px;
+}
+span{
+    font-family: serif;
+    color: #01998D;
+}
+#left p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#btn{
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    transition: all ease 0.5s;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#btn:hover{
+    box-shadow: 5px 5px 0 #01998D;
+}
+#left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -99;
 }
 #right{
     height: 100%;
-    width: 50%;
-   overflow: hidden;
+    width: 30%;
+    background-color: crimson;
+    overflow: hidden;
 }
 #right img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all ease 0.5s;
+}
+#right:hover img{
+    scale: 1.2;
 }
