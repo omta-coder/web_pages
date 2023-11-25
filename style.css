@@ -11,19 +11,35 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
+    background-color: #E2BC8F;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV3yzj44yjm0_qfjOkNJDqcJg2u08b40G5wg&usqp=CAU);
+    background-size: cover;
+    overflow: hidden;
 }
 #nav{
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
+    justify-content: space-evenly;
 }
-#prt2{
-    display: flex;
-    align-items: center;
-    gap: 40px;
+#nav h2{
+    font-family: serif;
+    font-size: 22px;
+    position: relative;
+}
+h2::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #000;
+    transition: all ease 1s;
+}
+h2:hover::after{
+    width: 100%;
 }
 #center{
     height: calc(100% - 50px);
@@ -33,37 +49,56 @@ html,body{
 #left{
     height: 100%;
     width: 50%;
-    overflow: hidden;
-}
-#left img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    transition: all ease 0.5s;
-}
-#left:hover img{
-    scale: 1.2;
-}
-#right{
-    height: 100%;
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#right h1{
-    font-size: 100px;
-    line-height: 100px;
+#left h1{
+    font-size: 80px;
+    line-height: 80px;
     margin-bottom: 20px;
-    -webkit-text-stroke-color: #FFCA25;
-    -webkit-text-stroke-width: 2px;
+    filter: drop-shadow(5px 5px 0 #666);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+span{
+    background-image: url(https://images.unsplash.com/photo-1598121496628-9d8b7578e290?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBlcmZ1bWUlMjB3aXRoJTIwZnJhZ3JhbmNlfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
     color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+}
+#left p{
+    font-size: 18px;
+    line-height: 25px;
 }
 button{
-    padding: 10px 20px;
-    font-weight: 600;
-    margin-top: 30px;
-    background-color: #FFCA25;
+    padding: 10px 30px;
     border: none;
+    background-color: #333;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 30px;
+    transition: all ease 0.5s;
 }
+button:hover{
+    box-shadow: 5px 5px 0 #000;
+}
+#right{
+    height: 100%;
+    width: 50%;
+    /* overflow: hidden; */
+}
+#right img{
+/*  height: 100%;
+    width: 100%;
+    object-fit: cover; */
+    transition: all ease 0.5s;
+}
+#right:hover img{
+    scale: 1.5;
+}
+
