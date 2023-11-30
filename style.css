@@ -11,74 +11,44 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    position: relative;
 }
 #nav{
-    height: 80px;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3vw;
+    padding: 0 60px;
 }
-#nav img{
-    height: 60px;
-}
-#nav h2{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 2vw;
-}
-#nav h5{
-    font-size: 1.4vw;
-    opacity: .6;
-}
-#nav button{
-    padding: 1vw 2vw;
-    font-size: 1.2vw;
-    font-weight: 600;
-    background-color: #173A24;
-    color: #fff;
-}
-#nav i{
-    font-size: 2.3vw;
-    font-weight: 600;
-    display: none;
-}
-#prt1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1vw;
+span{
+    color: #FB83AA;
 }
 #prt2{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vw;
+    gap: 30px;
 }
 #center{
-    height: calc(100% - 80px);
+    height: calc(100% - 50px);
     width: 100%;
     display: flex;
 }
-#left h1{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 6vw;
-    line-height: 7vw;
-    margin-bottom: 3vw;
+h1{
+    font-size: 90px;
+    line-height: 90px;
+    margin-bottom: 20px;
 }
-#left p{
-    font-size: 1.4vw;
-    margin-bottom: 3vw;
-}
-#left button{
-    padding: 1.2vw 3vw;
-    font-size: 1.3vw;
-    font-weight: 600;
-    background-color: #50A564;
-    color: #fff;
+button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
     border: none;
-    border-radius: 50vw;
+    background-color: #ee5c8a;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
 }
 #left{
     height: 100%;
@@ -90,147 +60,10 @@ html,body{
 #right{
     height: 100%;
     width: 50%;
+   overflow: hidden;
 }
-#page2{
+#right img{
     height: 100%;
     width: 100%;
-    display: flex;
-}
-#page2-left{
-    height: 100%;
-    width: 50%;
-}
-#page2-right{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#page2-right h1{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 6.2vw;
-    line-height: 7.5vw;
-    margin-bottom: 3vw;
-}
-#page2-right p{
-    font-size: 1.4vw;
-}
-#page3{
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-#page3-left{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#page3-left h1{
-    font-size: 5.2vw;
-    margin-bottom: 4vw;
-}
-#page3-left p{
-    font-size: 1.6vw;
-}
-#page3-right{
-    height: 100%;
-    width: 50%;
-}
-
-
-
-@media (max-width:600px) {
-    #nav{
-        height: 80px;
-        border: 1px solid #888;
-    }
-    #nav img{
-        height: 40px;
-    }
-    #nav h2{
-        font-size: 4vw;
-    }
-    #nav h5{
-        font-size: 3vw;
-        display: none;
-    }
-    #nav button{
-        padding: 2.3vw 5vw;
-        font-size: 3vw;
-    }
-    #nav i{
-        display: block;
-        font-size: 6vw;
-        margin-left: 4vw;
-    }
-    #center{
-        flex-direction: column;
-    }
-    #left{
-        height: 50%;
-        width: 100%;
-        border-bottom: 1px solid #888;
-    }
-    #left h1{
-        font-size: 12vw;
-        line-height: 12vw;
-        margin-bottom: 6vw;
-    }
-    #left p{
-        font-size: 3.4vw;
-        margin-bottom: 6vw;
-    }
-    #left button{
-        padding: 4vw 7vw;
-        font-size: 4vw;
-        letter-spacing: .4vh;
-    }
-    #right{
-        height: 50%;
-        width: 100%;
-    }
-    #page2{
-        flex-direction: column;
-        border-top: 1px solid #888;
-        border-bottom: 1px solid #888;
-    }
-    #page2-left{
-        height: 50%;
-        width: 100%;
-    }
-    #page2-right{
-        height: 50%;
-        width: 100%;
-    }
-    #page2-right h1{
-        font-size: 12vw;
-        line-height: 15vw;
-        margin-bottom: 5vw;
-    }
-    #page2-right p{
-        font-size: 3.2vw;
-    }
-    #page3{
-        flex-direction: column-reverse;
-    }
-    #page3-left{
-        height: 50%;
-        width: 100%;
-    }
-    #page3-left h1{
-        font-size: 10vw;
-        line-height: 12vw;
-        margin-bottom: 8vw;
-    }
-    #page3-left p{
-        font-size: 3vw;
-    }
-    #page3-right{
-        height: 50%;
-        width: 100%;
-    }
-    
+    object-fit: cover;
 }
